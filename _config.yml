@@ -1,0 +1,8 @@
+# HTML Compression settings
+compress_html:
+  clippings: all
+  comments: all
+
+# Build settings
+sass:
+  style: compressed

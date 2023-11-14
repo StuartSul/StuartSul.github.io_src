@@ -1,0 +1,38 @@
+.header {
+    height: $header-height;
+    box-shadow: 0 5px 10px -9px $header-shadow-color;
+    margin: 0;
+    padding: 0;
+    background-color: $header-background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    width: $max-width;
+    margin: 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    height: $header-height;
+    padding: 0 1rem;
+    background-color: $header-logo-background-color;
+    color: $font-inverse-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 1rem;
+    font-weight: 500;
+}

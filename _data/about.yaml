@@ -1,0 +1,160 @@
+########################
+#       Education      #
+########################
+
+- title: Education
+  type: dated
+  items:
+  - heading: Stanford University
+    subheading: M.S. in Computer Science
+    location: Stanford, CA
+    date:
+      start-month: September
+      start-year: 2024
+    descriptions:
+    - Incoming student, Fall 2024
+  - heading: Seoul National University
+    subheading: B.S. in Computer Science and Engineering
+    location: Seoul, South Korea
+    date:
+      start-month: March
+      start-year: 2016
+      end-month: August
+      end-year: 2022
+    descriptions:
+    - "GPA: 4.21/4.3 (<b>Class Rank: 1st</b>)"
+
+########################
+#      Experience      #
+########################
+
+- title: Experience
+  type: dated
+  items:
+  - heading: Linq (Techstars '23)
+    link: https://www.getlinq.com/
+    subheading: DevOps & MLOps Lead
+    location: Cambridge, MA
+    date:
+      start-month: January
+      start-year: 2024
+    descriptions:
+    - Currently engineering a resilient multi-cloud RAG architecture across AWS and Azure.
+    - Migrated all application workloads to a K8s environment and implemented IaC for existing cloud resources.
+    - Established core DevOps practices, including GitOps, autoscaling, CI/CD, monitoring, logging, and alarming, with Argo CD, Karpenter, GitHub Actions, Elasticsearch, Fluentbit, Kibana, Prometheus, and Grafana.
+  - heading: Blux (formerly Z.Ai)
+    link: https://www.blux.ai/
+    subheading: Co-Founder and CTO
+    location: Seoul, South Korea
+    date:
+      start-month: July
+      start-year: 2021
+      end-month: August
+      end-year: 2023
+    descriptions:
+    - Co-founded and grew Blux to serve <b>10M+ users</b> monthly with $1M+ in annual revenue.
+    - Designed a K8s-based recommender architecture that handled 1B+ requests monthly and trained/deployed 100+ ML models daily (featured in the official AWS Blog).
+    - Maintained 99.95%+ service uptime since the initial product launch.
+    - Developed and documented the Blux SDK.
+    - Built Transformer-based recommender recommender models that led initial customers to switch from a comparable AWS product to Blux.
+    - Initiated and managed multiple engineering projects, including ECS -> K8s migration, Cafe24 (Korean Shopify) product launch, and tenant onboarding automation.
+    - Recruited, built, and led a team of 10+ highly skilled engineers.
+    - Blux is an AI startup specializing in real-time recommender systems for e-commerce; it secured $1.7M in funding and received a $10M valuation in Korea.
+  - heading: Architecture and Code Optimization Lab
+    link: https://arc.snu.ac.kr/
+    subheading: 'Research Assistant (Advisor: Prof. Jae W. Lee)'
+    location: Seoul, South Korea
+    date:
+      start-month: June
+      start-year: 2020
+      end-month: September
+      end-year: 2020
+    descriptions:
+    - Designed and implemented a novel embedding clustering algorithm in C++, reducing the main memory access by up to 44% in commercial deep learning recommendation models (DLRMs).
+    - Co-authored an academic paper accepted at a top-tier CS conference (ASPLOS '21).
+    - Performed support tasks including data preprocessing, analysis, and algorithmic prototyping in C++ and Python.
+
+########################
+#       Projects       #
+########################
+
+- title: Projects
+  type: dated
+  items:
+  - heading: SampyoNet
+    link: https://github.com/StuartSul/SampyoNet
+    subheading: University Team Project
+    date:
+      start-month: September
+      start-year: 2020
+      end-month: December
+      end-year: 2020
+    descriptions:
+    - Developed a deep learning model and a mobile application for automated gravel quality assessment in concrete manufacturing.
+    - The project was requested by Sampyo, a leading cement manufacturer in South Korea.
+  - heading: LLVM Compiler Optimization
+    link: https://github.com/StuartSul/SWPP2020_Spring_Project_Team4
+    subheading: University Team Project
+    date:
+      start-month: March
+      start-year: 2020
+      end-month: June
+      end-year: 2020
+    descriptions:
+    - Engineered a custom LLVM compiler for optimized assembly code performance.
+    - Secured 2nd place among 13 teams in a university competition.
+  - heading: Homemade Neural Network
+    link: https://github.com/StuartSul/Homemade_Neural_Network
+    subheading: Personal Project
+    date:
+      start-month: January
+      start-year: 2020
+      end-month: January
+      end-year: 2020
+    descriptions:
+    - A deep learning framework written using only native Python (not even NumPy).
+
+########################
+#        Skills        #
+########################
+
+- title: Skills
+  type: simple
+  items:
+  - heading: Languages
+    description: 'English & Korean'
+  - heading: Programming Languages
+    description: |
+      Python, Java, C, C++, JavaScript/TypeScript, HTML/CSS, SQL
+  - heading: 'Libraries & Frameworks'
+    description: |
+      React.js, FastAPI, Flask, Redis, PostgreSQL, NumPy, Pandas, Tensorflow
+  - heading: 'DevOps & MLOps'
+    description: |
+      Linux Administration, Docker, Kubernetes, Helm, AWS (VPC, EC2, ECS, EKS, EBS, ELB, 
+      S3, RDS, DynamoDB, ElastiCache, Lambda, API Gateway, SMS, SNS, SQS, Glue, MWAA, Route53, 
+      CloudFront, CodePipeline, CodeBuild, CloudFormation, Secrets Manager, KMS, CloudWatch, 
+      CloudTrail), Azure, Terraform, GitHub Actions, Jenkins, ArgoCD, Elasticsearch, Logstash, 
+      Fluentbit, Kibana, Prometheus, Loki, Grafana, Apache Airflow, MLflow, TensorFlow Serving, 
+      Karpenter, Sealed Secrets
+      <br/>
+      <b>*I operated all of these at the production level*</b>
+
+########################
+#    Additional Info   #
+########################
+
+- title: More About Me
+  type: simple
+  items:
+  - heading: Music
+    description: |
+      I am a guitarist and composer with 2 albums released on major streaming platforms 
+      like Spotify and Apple Music. Since 2008, I have served as the lead guitarist for
+      various rock bands, performing in 2~3 rock concerts every year before COVID-19.
+  - heading: U.S. Army
+    description: |
+      I served as a Combat Medic in a U.S. Army cavalry unit from November 2017 to August 
+      2019. This was possible through the Korean Augmentation to the United States Army 
+      (KATUSA) program, which allowed me to fulfill South Korea's military service 
+      requirement while serving in the U.S. Army.

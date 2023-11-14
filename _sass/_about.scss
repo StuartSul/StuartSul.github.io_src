@@ -1,0 +1,241 @@
+.about-section {
+    padding: 3rem 0;
+    margin: 0;
+}
+
+.about-section.summary {
+
+    .profile-photo {
+        width: 200px;
+        margin: 1rem auto;
+        overflow: hidden;
+        @include border-radius(100px);
+        display: block;
+    }
+
+    .basic-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        .name {
+            margin: 0.25rem 0;
+            padding: 0;
+            font-weight: 800;
+        }
+    
+        .contact {
+            margin: 0.25rem 0;
+            padding: 0;
+        }
+    
+        .external-link {
+            display: inline-block;
+            padding: 0;
+            margin: 1.5rem 1rem;
+    
+            .icon:hover path {
+                fill: #333;
+                @include transition(all .2s ease);
+            }
+        }
+    }
+
+    .execsum {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.about-section.body {
+    padding: 1.5rem 0;
+
+    .title-container {
+        display: flex;
+        justify-content: center;
+    
+        .title {
+            display: inline;
+            border: 1px solid $border-secondary-color;
+            margin: 0 0 2rem 0;
+            padding: 0.6rem 0.9rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .item {
+        margin-bottom: 1.5rem;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        @media (max-width: $mobile-width) {
+            flex-direction: column;
+            margin-bottom: 3rem;
+        }
+    
+        .item-left {
+            min-width: $left-column-width;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            @media (max-width: $mobile-width) {
+                width: 100%;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-between;
+                border-bottom: 1px solid $border-primary-color;
+            }
+
+            .date-range {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+        
+                .date {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+        
+                    .month {
+                        color: $font-tertiary-color;
+                        font-size: 0.7rem;
+                    }
+        
+                    .year {
+                        margin-top: -0.5rem;
+                        font-size: 1.7rem;
+                        font-weight: 700;
+                    }
+                }
+        
+                .ndash {
+                    margin-top: 0.5rem;
+                    font-size: 1.5rem;
+
+                    @media (max-width: $mobile-width) {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .present {
+                    margin-top: 0.5rem;
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                }
+        
+                div {
+                    padding-right: 0.5rem;
+                }
+            }
+
+            .location {
+                color: $font-secondary-color;
+                font-weight: 600;
+
+                @media (max-width: $mobile-width) {
+                    padding-bottom: 0.2rem;
+                }
+            }
+        }
+
+        .item-photo-desktop {
+            // must align with dated items
+            width: 155px;
+            margin-right: 35px;
+            border-radius: 10px;
+
+            @media (max-width: $mobile-width) {
+                display: none;
+            }
+        }
+    
+        .item-right {
+            max-width: $right-column-width;
+
+            @media (max-width: $mobile-width) {
+                width: 100%;
+            }
+
+            .heading {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                font-weight: 700;
+                font-size: 1.5rem;
+            }
+
+            .link-icon {
+                width: 1.2rem;
+                height: 1.2rem;
+                margin-left: 0.1rem;
+                margin-bottom: -0.17rem;
+            }
+
+            .subheading {
+                margin: 0;
+                padding: 0;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+
+            .description {
+                list-style-type: disc;
+                margin-top: 0.5rem;
+                padding-left: 1.5rem;
+            }
+        }
+    }
+    
+    .item-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        @media (max-width: $mobile-width) {
+            margin-bottom: 1.5rem; // because dated lists have 3rem bottom margin on mobile
+        }
+    
+        .item-list-item {
+            flex: 50%;
+            margin-bottom: 1.5rem;
+
+            @media (max-width: $mobile-width) {
+                flex: 100%;
+            }
+            
+            .heading {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                font-weight: 700;
+                font-size: 1.5rem;
+            }
+        
+            .descriptions {
+                list-style-type: disc;
+                margin-top: 0.5rem;
+                padding-left: 1.5rem;
+            }
+        
+            .description {
+                margin-top: 0.5rem;
+                padding-right: 1.5rem;
+    
+                @media (max-width: $mobile-width) {
+                    flex: 100%;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

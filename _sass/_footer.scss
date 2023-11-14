@@ -1,0 +1,26 @@
+.footer {
+    border-top: 4px solid $border-primary-color;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    width: $max-width;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-line {
+    margin: 0;
+    padding: 0;
+    color: $font-secondary-color;
+    font-size: 0.875rem;
+}
