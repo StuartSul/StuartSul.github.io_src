@@ -53,7 +53,7 @@
       end-year: 2023
     descriptions:
     - Co-founded and grew Blux to serve <b>10M+ users</b> monthly with $1M+ in annual revenue.
-    - Designed a K8s-based recommender architecture that handled 1B+ requests monthly and trained/deployed 100+ ML models daily (featured in the official AWS Blog).
+    - Designed a K8s-based recommender architecture that handled 1B+ requests monthly and trained/deployed 100+ recommender models (featured in the official AWS Blog).
     - Maintained 99.95%+ service uptime since the initial product launch.
     - Developed and documented the Blux SDK.
     - Built Transformer-based recommender recommender models that led initial customers to switch from a comparable AWS product to Blux.
@@ -134,7 +134,7 @@
       Linux Administration, Docker, Kubernetes, Helm, AWS (VPC, EC2, ECS, EKS, EBS, ELB, 
       S3, RDS, DynamoDB, ElastiCache, Lambda, API Gateway, SMS, SNS, SQS, Glue, MWAA, Route53, 
       CloudFront, CodePipeline, CodeBuild, CloudFormation, Secrets Manager, KMS, CloudWatch, 
-      CloudTrail), Azure, Terraform, GitHub Actions, Jenkins, ArgoCD, Elasticsearch, Logstash, 
+      CloudTrail), Azure, Terraform, GitHub Actions, Jenkins, Argo CD, Elasticsearch, Logstash, 
       Fluentbit, Kibana, Prometheus, Loki, Grafana, Apache Airflow, MLflow, TensorFlow Serving, 
       Karpenter, Sealed Secrets
       <br/>
