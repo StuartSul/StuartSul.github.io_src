@@ -6,3 +6,10 @@ compress_html:
 # Build settings
 sass:
   style: compressed
+
+# Ignore files
+exclude:
+- Dockerfile
+- 'Gem*'
+- '*.md'
+- '*.sh'
