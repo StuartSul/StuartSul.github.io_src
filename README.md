@@ -15,7 +15,7 @@ docker build -t jekyll .
 Run the environment with the following command:
 
 ```bash
-docker run --rm -p 4000:4000 -p 35729:35729 --name jekyll -v "$PWD":/home/app jekyll
+docker run --rm -p 4000:4000 -p 35729:35729 --name jekyll -v "$PWD":/app jekyll
 ```
 
 Now, the website will be accessible at `0.0.0.0:4000`.
@@ -25,7 +25,8 @@ Now, the website will be accessible at `0.0.0.0:4000`.
 Run the following command:
 
 ```bash
-docker run --rm --name jekyll -v "$PWD":/home/app jekyll bundle && bundle exec jekyll build
+docker build -t jekyll .
+docker run --rm --name jekyll -v "$PWD":/app jekyll /bin/bash -c "cd /app && bundle && bundle exec jekyll build"
 ```
 
 Now, the build artifact will be available at `./_site`.
