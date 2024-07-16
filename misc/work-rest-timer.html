@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work-Rest Interval Timer</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+      .title {
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .timer-container {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .clock {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      .button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+      }
+      .button:disabled {
+        background-color: #6c757d;
+        cursor: not-allowed;
+      }
+      .input-container {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 20px;
+      }
+      .input-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .input-field {
+        width: 80px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        text-align: center;
+      }
+      .input-label {
+        font-size: 16px;
+      }
+      .gap {
+        width: 10px;
+      }
+      .flashing {
+        animation: flash 0.75s infinite alternate;
+      }
+      @keyframes flash {
+        0% { background-color: #daffda; }
+        100% { background-color: #f0f0f0; }
+      }
+    </style>
+</head>
+<body>
+
+  <div class="title">Work-Rest Interval Timer</div>
+  <div class="container">
+    <div class="timer-container">
+      <div id="clock" class="clock"></div>
+      <button id="button" class="button"></button>
+    </div>
+    <div class="input-container">
+      <div class="input-box">
+        <input id="work-time" type="number" class="input-field" value="3000">
+        <label for="work-time" class="input-label">Work Time</label>
+      </div>
+      <div class="gap"></div>
+      <div class="input-box">
+        <input id="rest-time" type="number" class="input-field" value="600">
+        <label for="rest-time" class="input-label">Rest Time</label>
+      </div>
+    </div>
+  </div>
+
+  <audio id="alarm-sound" src="alarm.mp3" preload="auto" loop></audio>
+
+  <script>
+    const initialState = 1;
+
+    let clock = document.getElementById('clock');
+    let button = document.getElementById('button');
+    let alarmSound = document.getElementById('alarm-sound');
+    let workTimeInput = document.getElementById('work-time');
+    let restTimeInput = document.getElementById('rest-time');
+
+    let timeRemaining; // in seconds
+    let timer;
+    let state = initialState;
+
+    function updateClock() {
+      let minutes = Math.floor(timeRemaining / 60);
+      let seconds = timeRemaining % 60;
+      clock.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    function startCountdown(duration, nextState) {
+      clearInterval(timer);
+      timeRemaining = duration;
+      updateClock();
+
+      timer = setInterval(() => {
+        timeRemaining--;
+        updateClock();
+        if (timeRemaining <= 0) {
+          clearInterval(timer);
+          state = nextState;
+          handleState();
+        }
+      }, 1000);
+    }
+
+    function handleState() {
+      switch (state) {
+        case 1:
+          timeRemaining = parseInt(workTimeInput.value);
+          updateClock();
+          button.textContent = 'Begin Work';
+          button.onclick = () => {
+            state = 2;
+            handleState();
+          };
+          break;
+        case 2:
+          button.textContent = 'Reset';
+          button.onclick = () => {
+            state = 1;
+            clearInterval(timer);
+            handleState();
+          };
+          startCountdown(parseInt(workTimeInput.value), 3);
+          break;
+        case 3:
+          timeRemaining = parseInt(restTimeInput.value);
+          updateClock();
+          button.textContent = 'Begin Rest';
+          alarmSound.play();
+          document.body.classList.add('flashing')
+          button.onclick = () => {
+            state = 4;
+            handleState();
+            alarmSound.pause();
+            alarmSound.currentTime = 0;
+            document.body.classList.remove('flashing')
+          };
+          break;
+        case 4:
+          button.textContent = 'Reset';
+          button.onclick = () => {
+            state = 1;
+            clearInterval(timer);
+            handleState();
+          };
+          startCountdown(parseInt(restTimeInput.value), 5);
+          break;
+        case 5:
+          timeRemaining = 0;
+          updateClock();
+          button.textContent = 'Begin Work';
+          alarmSound.play();
+          document.body.classList.add('flashing')
+          button.onclick = () => {
+            state = 2;
+            handleState();
+            alarmSound.pause();
+            alarmSound.currentTime = 0;
+            document.body.classList.remove('flashing')
+          };
+          break;
+      }
+    }
+
+    workTimeInput.oninput = () => {
+      if (state === 1) {
+        timeRemaining = parseInt(workTimeInput.value);
+        updateClock();
+      }
+    };
+
+    restTimeInput.oninput = () => {
+      if (state === 3) {
+        timeRemaining = parseInt(restTimeInput.value);
+        updateClock();
+      }
+    };
+
+    handleState();
+  </script>
+
+</body>
+</html>
