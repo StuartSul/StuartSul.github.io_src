@@ -31,6 +31,10 @@ docker run --rm --name jekyll -v "$PWD":/app jekyll /bin/bash -c "cd /app && bun
 
 Now, the build artifact will be available at `./_site`.
 
+## CI/CD
+
+This repository automatically pushes the build artifacts to GitHub Pages repository through GitHub Actions. Details available at `.github/workflows/build-deploy.yaml`.
+
 # Special Thanks
 
 Even though I wrote most of the HTML/CSS, the following helped me greatly.
