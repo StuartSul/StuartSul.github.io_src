@@ -1,0 +1,110 @@
+.timer-container {
+
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .clock-container {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .clock {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .clock-button {
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+    .button:disabled {
+        background-color: #6c757d;
+        cursor: not-allowed;
+    }
+
+    .input-container {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .input_fields {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-field {
+        width: 2.5rem;
+        height: 2rem;
+        margin-bottom: 10px;
+        border: 1px solid $border-primary-color;
+        border-radius: 5px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type=number] {
+          -moz-appearance: textfield;
+    }
+
+    .input-label {
+        font-size: 16px;
+    }
+
+    .gap {
+        width: 10px;
+    }
+}
+
+.timer-flashing {
+    animation: timer-flash 0.75s infinite alternate;
+}
+
+@keyframes timer-flash {
+    0% { background-color: #daffda; }
+    100% { background-color: $body-background-color; }
+}
