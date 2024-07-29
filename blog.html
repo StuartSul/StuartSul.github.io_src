@@ -1,0 +1,29 @@
+---
+layout: default
+title: Stuart Sul - Blog
+---
+
+<!-- Heading -->
+<section class="blog heading">
+    <h1 class="title" itemprop="title">Personal Blog</h1>
+    <p class="description" itemprop="description">Random essays that not that many people will read. *PAGE UNDER DEVELOPMENT*</p>
+</section>
+
+<!-- Body -->
+<section class="blog body">
+    {% for post in site.data.blog-list %}
+    <div class="post">
+        <a class="link-trans" href="{{ post.link }}" itemprop="sameAs">
+            <h3 class="title" itemprop="title">
+                <span>{{ post.title }}</span>
+                <span>{% include icons/link.html %}</span>
+            </h3>
+            <h4 class="subtitle" itemprop="subtitle">
+                {{ post.date.month }} {{ post.date.day }}, {{ post.date.year }} | 
+                {{ post.views }} views | {{ post.comments }} comments
+            </h4>
+            <p class="summary">{{ post.summary }}</p>
+        </a>
+    </div>
+    {% endfor %}
+</section>
