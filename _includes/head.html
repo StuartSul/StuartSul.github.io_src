@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Stuart Sul's personal website" />
   <meta name="keywords" content="Stuart, Sul, Personal, Website, Software, Engineering, Computer, Science, Artificiall, Intelligence, AI, Entrepreneurship, Startup, Z.Ai, Blux, Linq, SNU, Stanford"/>
-  <title>Stuart Sul</title>  
+  <title>{{ page.title | default: "Stuart Sul" }}</title>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
