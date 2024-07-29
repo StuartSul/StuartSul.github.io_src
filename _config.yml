@@ -1,3 +1,8 @@
+# Custom collections
+collections:
+  blog:
+    output: true
+
 # HTML Compression settings
 compress_html:
   clippings: all
@@ -10,6 +15,6 @@ sass:
 # Ignore files
 exclude:
 - Dockerfile
+- README.md
 - 'Gem*'
-- '*.md'
 - '*.sh'

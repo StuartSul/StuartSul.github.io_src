@@ -11,15 +11,15 @@ title: Blog
 
 <!-- Body -->
 <section class="blog body">
-    {% for post in site.data.blog-list %}
+    {% for post in site.blog %}
     <div class="post">
-        <a class="link-trans" href="{{ post.link }}" itemprop="sameAs">
+        <a class="link-trans" href="{{ post.url }}" itemprop="sameAs">
             <h3 class="title" itemprop="title">
                 <span>{{ post.title }}</span>
                 <span>{% include icons/link.html %}</span>
             </h3>
             <h4 class="subtitle" itemprop="subtitle">
-                {{ post.date.month }} {{ post.date.day }}, {{ post.date.year }} | 
+                {{ post.month }} {{ post.day }}, {{ post.year }} | 
                 {{ post.views }} views | {{ post.comments }} comments
             </h4>
             <p class="summary">{{ post.summary }}</p>
