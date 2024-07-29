@@ -9,5 +9,9 @@ layout: compress
 		{% include header.html %}
 		<main><div class="main-container">{{ content }}</div></main>
 		{% include footer.html %}
+        {% if page.javascript_file %}
+        <script src="{{ page.javascript_file }}"></script>
+        {% endif %}
 	</body>
+	
 </html>
