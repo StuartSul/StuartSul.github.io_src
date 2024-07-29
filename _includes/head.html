@@ -1,3 +1,9 @@
+{% if page.title %}
+  {% assign full_title = page.title | append: " | Stuart Sul" %}
+{% else %}
+  {% assign full_title = "Stuart Sul" %}
+{% endif %}
+
 <head>
   <!-- Google Analytics Start -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1J7FJBD03C"></script>
@@ -14,7 +20,7 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Stuart Sul's personal website" />
   <meta name="keywords" content="Stuart, Sul, Personal, Website, Software, Engineering, Computer, Science, Artificiall, Intelligence, AI, Entrepreneurship, Startup, Z.Ai, Blux, Linq, SNU, Stanford"/>
-  <title>{{ page.title | default: "Stuart Sul" }}</title>
+  <title>{{ full_title }}</title>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +30,7 @@
   <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.json" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Stuart Sul"/>
+  <meta property="og:title" content="{{ full_title }}"/>
   <meta property="og:site_name" content="Stuart Sul" />
   <meta property="og:description" content="Stuart Sul's personal website.">
   <meta property="og:url" content="https://stuartsul.com/" />
