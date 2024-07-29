@@ -16,6 +16,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $mobile-width) {
+        padding: 0 0.5rem;
+    }
 }
 
 .header-logo {
