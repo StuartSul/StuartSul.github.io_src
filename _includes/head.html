@@ -5,7 +5,8 @@
 {% endif %}
 
 <head>
-  <!-- Google Analytics Start -->
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1J7FJBD03C"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,28 +14,43 @@
     gtag('js', new Date());
     gtag('config', 'G-1J7FJBD03C');
   </script>
-  <!-- Google Analytics End -->
+
+  <!-- Core -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Stuart Sul's personal website" />
-  <meta name="keywords" content="Stuart, Sul, Personal, Website, Software, Engineering, Computer, Science, Artificiall, Intelligence, AI, Entrepreneurship, Startup, Z.Ai, Blux, Linq, SNU, Stanford"/>
-  <title>{{ full_title }}</title>
+  <meta name="theme-color" content="#f7f7f7" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+
+  <!-- Style -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:800,700,600,500,400,300' type='text/css' />
   <link rel="stylesheet" href="/assets/css/main.css" />
-  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
-  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
-  <link rel="manifest" href="/manifest.json" />
+
+  <!-- SEO (General) -->
+  <title>{{ full_title }}</title>
+  <meta name="keywords" content="Stuart, Sul, Personal, Website, Software, Engineering, Computer, Science, Artificiall, Intelligence, AI, Entrepreneurship, Startup, Z.Ai, Blux, Linq, SNU, Stanford" />
+  <meta name="description" content="Stuart Sul's personal website" />
+  <meta name="thumbnail" content="/assets/images/profile.jpg" />
+
+  <!-- SEO (Open Gragh) -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ full_title }}"/>
+  <meta property="og:title" content="{{ full_title }}" />
   <meta property="og:site_name" content="Stuart Sul" />
-  <meta property="og:description" content="Stuart Sul's personal website.">
+  <meta property="og:description" content="Stuart Sul's personal website." />
   <meta property="og:url" content="https://stuartsul.com/" />
   <meta property="og:image" content="/assets/images/profile.jpg" />
   <meta property="og:image:width" content="400" />
   <meta property="og:image:height" content="400" />
+
+  <!-- SEO (Twitter) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ full_title }}" />
+  <meta name="twitter:description" content="Stuart Sul's personal website." />
+  <meta name="twitter:image" content="/assets/images/profile.jpg" />
+
 </head>
