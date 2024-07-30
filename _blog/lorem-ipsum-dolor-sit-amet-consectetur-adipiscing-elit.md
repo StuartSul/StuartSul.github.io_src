@@ -2,6 +2,7 @@
 layout: post
 title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 summary: Duis rhoncus, nulla sed rutrum rutrum, justo sem cursus nisl, a finibus massa elit vel tortor.
+thumbnail_file: /assets/images/stanford-logo.png
 month: July
 day: 25
 year: 1997

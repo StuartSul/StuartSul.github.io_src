@@ -14,15 +14,20 @@ title: Blog
     {% for post in site.blog %}
     <div class="post">
         <a class="link-trans" href="{{ post.url }}" itemprop="sameAs">
-            <h3 class="title" itemprop="title">
-                <span>{{ post.title }}</span>
-                <span>{% include icons/link.html %}</span>
-            </h3>
-            <h4 class="subtitle" itemprop="subtitle">
-                {{ post.month }} {{ post.day }}, {{ post.year }} | 
-                {{ post.views }} views | {{ post.comments }} comments
-            </h4>
-            <p class="summary">{{ post.summary }}</p>
+            <div class="left">
+                <h3 class="title" itemprop="title">
+                    <span>{{ post.title }}</span>
+                    <span>{% include icons/link.html %}</span>
+                </h3>
+                <h4 class="subtitle" itemprop="subtitle">
+                    {{ post.month }} {{ post.day }}, {{ post.year }} | 
+                    {{ post.views }} views | {{ post.comments }} comments
+                </h4>
+                <p class="summary">{{ post.summary }}</p>
+            </div>
+            <div class="right">
+                <img class="thumbnail" src="{{ post.thumbnail_file }}" alt="thumbnail" itemprop="image">
+            </div>
         </a>
     </div>
     {% endfor %}
