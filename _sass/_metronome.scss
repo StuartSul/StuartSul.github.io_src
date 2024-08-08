@@ -106,6 +106,12 @@
             cursor: not-allowed;
         }
     }
+
+    .warning-message {
+        margin-top: 2rem;
+        color: $font-secondary-color;
+        font-weight: 500;
+    }
 }
 
 .metronome-flashing {

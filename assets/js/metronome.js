@@ -4,18 +4,33 @@ const icon = document.getElementById("metronome-icon");
 const bpmSlider = document.getElementById("bpm-range");
 const bpmNumber = document.getElementById("bpm-number");
 const button = document.getElementById("metronome-button");
-const metronomeSound = document.getElementById("metronome-sound");
+
+let audioCtx;
+let metronomeTick;
+let metronomeTickGain;
 
 let bpm = defaultBpm;
 bpmSlider.value = defaultBpm;
 bpmNumber.value = defaultBpm;
 
 let running = false;
+let interval;
+let metronomeInitialized = false;
 
 bpmSlider.oninput = () => {
     bpm = bpmSlider.value;
     bpmNumber.value = bpmSlider.value;
 };
+
+bpmSlider.onmouseup = () => {
+    if (running)
+        startMetronome();
+}
+
+bpmSlider.ontouchend = () => {
+    if (running)
+        startMetronome();
+}
 
 bpmNumber.oninput = () => {
     let correctedValue = bpmNumber.value;
@@ -26,44 +41,80 @@ bpmNumber.oninput = () => {
     bpm = correctedValue
     bpmNumber.value = correctedValue;
     bpmSlider.value = correctedValue;
+    if (running)
+        startMetronome();
 };
 
 button.onclick = () => {
+    if (!metronomeInitialized)
+        initializeMetronome();
+
     running = !running;
 
     if (running) {
         button.textContent = "Stop";
-        metronomeLoop();
+        startMetronome();
     } else {
         button.textContent = "Start";
+        stopMetronome();
     }
 };
 
-async function metronomeLoop() {
-    metronomeBeat();
+function initializeMetronome() {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    metronomeTick = audioCtx.createOscillator();
+    metronomeTickGain = audioCtx.createGain();
 
-    let prevTime = performance.now();
-    let currTime;
+    metronomeTick.type = 'sine';
+    metronomeTick.frequency.value = 1000;
+    metronomeTickGain.gain.value = 0;
+    metronomeTick.connect(metronomeTickGain);
+    metronomeTickGain.connect(audioCtx.destination);
+    metronomeTick.start(0);
 
-    while (running) {
-        currTime = performance.now()
-        if (currTime - prevTime >= 60000 / bpm) {
-            metronomeBeat();
-            prevTime = currTime;
-        }
-        await sleep(1);
-    }
+    metronomeInitialized = true;
 }
 
-function metronomeBeat() {
+async function startMetronome() {
+    stopMetronome();
+
+    if (audioCtx.state === 'suspended') {
+        await audioCtx.resume();
+    }
+
+    const timeInterval = 60 / bpm;
+    let tickTime = audioCtx.currentTime + 0.5; // add a little delay for smooth start
+    
+    setNextTick(tickTime);
+    tickTime += timeInterval;
+    setTimeout(() => {
+        flashMetronome();
+    }, 500);
+
+    interval = setInterval(() => {
+        setNextTick(tickTime);
+        tickTime += timeInterval;
+        setTimeout(() => {
+            flashMetronome();
+        }, 500);
+    }, timeInterval * 1000);
+}
+
+function stopMetronome() {
+    clearInterval(interval);
+    metronomeTickGain.gain.cancelScheduledValues(audioCtx.currentTime);
+    metronomeTickGain.gain.setValueAtTime(0, audioCtx.currentTime);
+}
+
+function setNextTick(time) {
+    metronomeTickGain.gain.setValueAtTime(0, time);
+    metronomeTickGain.gain.linearRampToValueAtTime(1, time + .001);
+    metronomeTickGain.gain.linearRampToValueAtTime(0, time + .001 + .01);
+}
+
+function flashMetronome() {
     icon.classList.add('metronome-flashing');
-    metronomeSound.currentTime = 0;
-    metronomeSound.play();
     setTimeout(() => {
         icon.classList.remove('metronome-flashing');
     }, 200);
-}
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
 }
