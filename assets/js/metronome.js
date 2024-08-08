@@ -4,9 +4,7 @@ const icon = document.getElementById("metronome-icon");
 const bpmSlider = document.getElementById("bpm-range");
 const bpmNumber = document.getElementById("bpm-number");
 const button = document.getElementById("metronome-button");
-const metronomeSound = new Audio("/assets/audio/metronome-beat.mp3");
-
-metronomeSound.preload = 'auto';
+const metronomeSound = document.getElementById("metronome-sound");
 
 let bpm = defaultBpm;
 bpmSlider.value = defaultBpm;
