@@ -6,7 +6,7 @@ title: Tools
 <!-- Heading -->
 <section class="tools heading">
     <h1 class="title" itemprop="title">Software Tools</h1>
-    <p class="description" itemprop="description">These aren't fancy engineering side-projects. Just simple tools I made for myself.</p>
+    <p class="description" itemprop="description">Simple tools for my own use</p>
 </section>
 
 <!-- Body -->
@@ -14,20 +14,15 @@ title: Tools
     {% for tool in site.tools %}
     <div class="tool">
         <a class="link-trans" href="{{ tool.url }}" itemprop="sameAs">
-            <div class="left">
+            <div class="top">
+                <img class="thumbnail" src="{{ tool.thumbnail_file }}" alt="thumbnail" itemprop="image">
+            </div>
+            <div class="bottom">
                 <h3 class="name" itemprop="name">
                     <span>{{ tool.title }}</span>
-                    <span>{% include icons/link.html %}</span>
+                    <!-- <span>{% include icons/link.html %}</span> -->
                 </h3>
                 <h4 class="summary" itemprop="summary">{{ tool.summary }}</h4>
-                <ul class="description">
-                    {% for desc-item in tool.description %}
-                    <li>{{ desc-item }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="right">
-                <img class="thumbnail" src="{{ tool.thumbnail_file }}" alt="thumbnail" itemprop="image">
             </div>
         </a>
     </div>
