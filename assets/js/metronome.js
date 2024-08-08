@@ -1,4 +1,4 @@
-const defaultBpm = 60;
+const defaultBpm = 100;
 
 const icon = document.getElementById("metronome-icon");
 const bpmSlider = document.getElementById("bpm-range");
