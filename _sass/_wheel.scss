@@ -1,0 +1,232 @@
+.wheel-container {
+
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .title {
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: $font-primary-color;
+    }
+    
+    .wheel-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $mobile-width) {
+            flex-direction: column-reverse;
+        }
+
+        .inputs {
+            margin-right: 2rem;
+            width: 20rem;
+            height: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: $mobile-width) {
+                margin-right: 0;
+                margin-top: 2rem;
+            }
+
+            textarea {
+                border: 1px solid $border-primary-color;
+                border-radius: 5px;
+                font-size: 1rem;
+                line-height: 1.4rem;
+                padding: 0.5rem 0.7rem;
+            }
+
+            button {
+                margin-top: 2rem;
+                padding: 10px 20px;
+                width: 10rem;
+                height: 4rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #fff;
+                background-color: #007bff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.3s;
+            }
+            button:hover {
+                background-color: #0056b3;
+                transform: scale(1.05);
+            }
+            button:disabled {
+                background-color: #6c757d;
+                cursor: not-allowed;
+            }
+        }
+
+        .wheel {
+            margin-top: 2rem;
+            width: 20rem;
+            position: relative;
+
+            .spinning-wheel {
+                width: 20rem;
+                height: 20rem;
+                position: relative;
+                transition: transform 5s cubic-bezier(0, 0.3, 0.15, 1);
+                // transform: # set by JavaScript
+                
+                .sector {
+                    width: 20rem;
+                    height: 20rem;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    border-radius: 50%;
+                    transform-origin: center;
+                    // background : # set by JavaScript
+                    // clipPath : # set by JavaScript
+                    // transform : # set by JavaScript
+                }
+                
+                .sector-label {
+                    width: 20rem;
+                    height: 20rem;
+                    padding-top: 1.2rem;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    color: $font-primary-color;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    text-align: center;
+                    transform-origin: center;
+                    // transform : # set by JavaScript
+                }
+            }
+
+            .marker {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: -2rem;
+                left: 0;
+                width: 100%;
+                z-index: 3;
+                transform: rotate(180deg);
+                
+                #triangle {
+                    width: 3rem;
+                    fill: #f55;
+                    -webkit-filter: drop-shadow(0px 0px 3px $header-shadow-color);
+                    filter: drop-shadow(0px 0px 3px $header-shadow-color);
+                }
+            }
+
+            .winner-label {
+                font-size: 1.2rem;
+                font-weight: 600;
+                width: 100%;
+                margin-top: 1.5rem;
+                text-align: center;
+            }
+        }   
+    }
+    
+
+    // .icon-container {
+    //     margin-bottom: 1rem;
+
+    //     svg {
+    //         height: 40px;
+    //         width: 40px;
+    //         fill: #6c757d33;
+    //     }
+    // }
+
+    // .bpm-container {
+        
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     margin-bottom: 1.5rem;
+
+    //     input[type=range] {
+    //         -webkit-appearance: none;
+    //         margin-right: 1rem;
+    //         width: 40vw;
+    //         height: 8px;
+    //         border-radius: 5px;
+    //         background: #007bff;
+    //         outline: none;
+    //         opacity: 0.9;
+    //         transition: opacity 0.2s;
+        
+    //     }
+    //     input[type=range]:hover {
+    //         opacity: 1;
+    //     }
+    //     input[type=range]::-webkit-slider-thumb {
+    //         -webkit-appearance: none;
+    //         appearance: none;
+    //         width: 20px;
+    //         height: 20px;
+    //         border: 1px solid $font-primary-color; /* Border of the thumb */
+    //         border-radius: 50%;
+    //         background: #007bff;
+    //         cursor: pointer;
+    //         transition: background 0.2s;
+    //     }
+    //     input[type=range]::-moz-range-thumb {
+    //         width: 20px;
+    //         height: 20px;
+    //         border-radius: 50%;
+    //         background: #007bff;
+    //         cursor: pointer;
+    //         transition: background 0.2s;
+    //     }
+    //     span {
+    //         margin-right: 0.3rem;
+    //     }
+    //     input[type=number] {
+    //         width: 3rem;
+    //         height: 1.8rem;
+    //         border: 1px solid $border-primary-color;
+    //         border-radius: 5px;
+    //         font-size: 16px;
+    //         text-align: center;
+    //     }
+    //     input[type=number]::-webkit-outer-spin-button,
+    //     input[type=number]::-webkit-inner-spin-button {
+    //         -webkit-appearance: none;
+    //         margin: 0;
+    //     }
+    //     input[type=number] {
+    //         -moz-appearance: textfield;
+    //     }
+    // }
+
+
+    // .warning-message {
+    //     margin-top: 2rem;
+    //     color: $font-secondary-color;
+    //     font-weight: 500;
+    // }
+}
+
+// .metronome-flashing {
+//     animation: metronome-flash 0.2s 1 normal ease-in;
+// }
+
+// @keyframes metronome-flash {
+//     0% { fill: #007bff; }
+//     100% { fill: #6c757d33; }
+// }

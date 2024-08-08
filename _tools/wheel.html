@@ -1,0 +1,28 @@
+---
+layout: default
+title: Spin the Wheel
+summary: For quick, casual lotteries
+thumbnail_file: /assets/images/wheel.png
+javascript_file: /assets/js/wheel.js
+---
+
+<div class="wheel-container">
+    <div class="title">
+        Spin the Wheel
+    </div>
+    <div class="wheel-body">
+        <div class="inputs">
+            <textarea id="wheel-input" class="wheel-input" rows="12" cols="24" maxlength="1000"></textarea>
+            <button id="wheel-button">Spin</button>
+        </div>
+        <div class="wheel" id="wheel">
+            <span class="marker">
+                <svg id="triangle" viewBox="0 0 100 100">
+                    <polygon points="50 0, 100 100, 0 100"/>
+                </svg>
+            </span>
+            <div class="spinning-wheel" id="spinning-wheel"></div>
+            <div class="winner-label" id="winner-label">Selected: ?</div>
+        </div>
+    </div>
+</div>
