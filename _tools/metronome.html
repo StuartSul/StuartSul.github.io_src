@@ -1,0 +1,24 @@
+---
+layout: default
+title: Metronome
+summary: A simple online metronome
+thumbnail_file: /assets/images/metronome.png
+javascript_file: /assets/js/metronome.js
+---
+
+<div class="metronome-container">
+  <div class="title">Metronome</div>
+  <div class="icon-container">
+    <svg>
+      <circle id="metronome-icon" cx="20" cy="20" r="20" ></circle>
+    </svg>
+  </div>
+  <div class="bpm-container">
+    <input type="range" id="bpm-range" min="1" max="250" />
+    <span>BPM:</span>
+    <input type="number" id="bpm-number" />
+  </div>
+  <div class="button-container">
+    <button id="metronome-button" class="metronome-button">Start</button>
+  </div>
+</div>
