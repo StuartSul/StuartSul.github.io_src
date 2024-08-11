@@ -1,0 +1,72 @@
+---
+layout: default
+order: 1000
+title: Crop & Resize
+summary: Quickly crop and resize image files
+thumbnail_file: /assets/images/image-editor.png
+javascript_file: /assets/js/image-editor.js
+---
+
+<div class="editor-container">
+  <div class="title">Image Cropper & Resizer</div>
+  <div id="log"></div>
+  <div class="canvas-container">
+    <input type="file" id="upload" accept="image/*">
+    <div class="canvas" id="canvas">
+      <canvas class="canvas-layer ui-layer" id="ui-layer">
+        HTML5 Canvas is not supported on your browser.
+      </canvas>
+      <canvas class="canvas-layer image-layer" id="image-layer">
+        HTML5 Canvas is not supported on your browser.
+      </canvas>
+    </div>
+  </div>
+  <div class="controls">
+    <div class="control-title">Save:</div>
+    <div class="control-line resize-format">
+      <span class="control-item">
+        <label for="resize">Resize</label>
+        <input type="checkbox" id="resize" name="resize">
+      </span>
+      <span class="control-item">
+        <label for="format">Format:</label>
+        <select name="format" id="format">
+          <option value="original">Original</option>
+          <option value="gif">GIF</option>
+          <option value="jpg">JPG/JPEG</option>
+          <option value="png">PNG</option>
+        </select>
+      </span>
+    </div>
+    <div class="resize-controls" id="resize-controls">
+      <div class="control-line">
+        <span class="control-item">
+          <label for="width">Width:</label>
+          <span class="image-size" id="currWidth">0</span>
+          <span class="right-arrow">&rarr;</span>
+          <input type="number" id="width" name="width">
+        </span>
+      </div>
+      <div class="control-line">
+        <span class="control-item">
+          <label for="height">Height:</label>
+          <span class="image-size" id="currHeight">0</span>
+          <span class="right-arrow">&rarr;</span>
+          <input type="number" id="height" name="height">
+        </span>
+      </div>
+      <div class="control-line">
+        <span class="control-item">
+          <label for="keep-ratio">Keep aspect ratio</label>
+          <input type="checkbox" id="keep-ratio" name="keep-ratio" value="keep-ratio">
+        </span>
+      </div>
+    </div>
+    <div class="control-line">
+      <span class="control-item">
+        <input type="button" id="download-button" value="Download">
+      </span>
+    </div>
+  </div>
+  <span class="res" id="res"></span>
+</div>
