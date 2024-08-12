@@ -1,4 +1,4 @@
-const initialState = 1;
+const initialState = 0;
 
 let clock = document.getElementById('clock');
 let button = document.getElementById('clock-button');
@@ -8,30 +8,67 @@ let workTimeSecInput = document.getElementById('work-time-sec');
 let restTimeMinInput = document.getElementById('rest-time-min');
 let restTimeSecInput = document.getElementById('rest-time-sec');
 
-let timeRemaining;
-let timer;
 let state = initialState;
+let worker = new Worker("/assets/js/timer-worker.js");
 
-function updateClock() {
-    let minutes = Math.floor(timeRemaining / 60);
-    let seconds = timeRemaining % 60;
-    clock.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+function updateClock(timeRemaining) {
+    const minuteString = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+    const secondString = (timeRemaining % 60).toString().padStart(2, '0');
+
+    clock.textContent = `${minuteString}:${secondString}`;
 }
 
-function startCountdown(duration, nextState) {
-    clearInterval(timer);
-    timeRemaining = duration;
-    updateClock();
-
-    timer = setInterval(() => {
-    timeRemaining--;
-    updateClock();
-    if (timeRemaining <= 0) {
-        clearInterval(timer);
-        state = nextState;
-        handleState();
+function handleState() {
+    switch (state) {
+        case 0:
+            updateClock(getWorkTime());
+            button.textContent = 'Begin Work';
+            button.onclick = () => {
+                state = 1;
+                handleState();
+            };
+            break;
+        case 1:
+            worker.postMessage({command: "start", duration: getWorkTime()});
+            button.textContent = 'Reset';
+            button.onclick = () => {
+                worker.postMessage({command: "stop", nextState: 0});
+            };
+            break;
+        case 2:
+            updateClock(getRestTime());
+            button.textContent = 'Begin Rest';
+            button.onclick = () => {
+                state = 3;
+                handleState();
+                alarmSound.pause();
+                alarmSound.currentTime = 0;
+                document.body.classList.remove('timer-flashing')
+            };
+            alarmSound.play();
+            document.body.classList.add('timer-flashing')
+            break;
+        case 3:
+            button.textContent = 'Reset';
+            button.onclick = () => {
+                worker.postMessage({command: "stop", nextState: 1});
+            };
+            worker.postMessage({command: "start", duration: getRestTime()});
+            break;
+        case 4:
+            updateClock(getWorkTime());
+            button.textContent = 'Begin Work';
+            button.onclick = () => {
+                state = 1;
+                handleState();
+                alarmSound.pause();
+                alarmSound.currentTime = 0;
+                document.body.classList.remove('timer-flashing')
+            };
+            alarmSound.play();
+            document.body.classList.add('timer-flashing')
+            break;
     }
-    }, 1000);
 }
 
 function getWorkTime() {
@@ -42,100 +79,44 @@ function getRestTime() {
     return parseInt(restTimeMinInput.value) * 60 + parseInt(restTimeSecInput.value)
 }
 
-function handleState() {
-    switch (state) {
-    case 1:
-        timeRemaining = getWorkTime();
-        updateClock();
-        button.textContent = 'Begin Work';
-        button.onclick = () => {
-            state = 2;
-            handleState();
-        };
-        break;
-    case 2:
-        button.textContent = 'Reset';
-        button.onclick = () => {
-            state = 1;
-            clearInterval(timer);
-            handleState();
-        };
-        startCountdown(getWorkTime(), 3);
-        break;
-    case 3:
-        timeRemaining = getRestTime();
-        updateClock();
-        button.textContent = 'Begin Rest';
-        alarmSound.play();
-        document.body.classList.add('timer-flashing')
-        button.onclick = () => {
-            state = 4;
-            handleState();
-            alarmSound.pause();
-            alarmSound.currentTime = 0;
-            document.body.classList.remove('timer-flashing')
-        };
-        break;
-    case 4:
-        button.textContent = 'Reset';
-        button.onclick = () => {
-            state = 1;
-            clearInterval(timer);
-            handleState();
-        };
-        startCountdown(getRestTime(), 5);
-        break;
-    case 5:
-        timeRemaining = 0;
-        updateClock();
-        button.textContent = 'Begin Work';
-        alarmSound.play();
-        document.body.classList.add('timer-flashing')
-        button.onclick = () => {
-            state = 2;
-            handleState();
-            alarmSound.pause();
-            alarmSound.currentTime = 0;
-            document.body.classList.remove('timer-flashing')
-        };
-        break;
-    }
-}
-
 workTimeMinInput.oninput = () => {
-    let correctedValue = Math.min(99, Math.max(0, workTimeMinInput.value));
-    workTimeMinInput.value = correctedValue.toString().padStart(2, '0');
-    if (state === 1) {
-        timeRemaining = getWorkTime();
-        updateClock();
-    }
+    workTimeMinInput.value = Math.min(99, Math.max(0, workTimeMinInput.value)).toString().padStart(2, '0');
+    if (state === 0)
+        updateClock(getWorkTime());
 };
 
 workTimeSecInput.oninput = () => {
-    let correctedValue = Math.min(59, Math.max(0, workTimeSecInput.value));
-    workTimeSecInput.value = correctedValue.toString().padStart(2, '0');
-    if (state === 1) {
-        timeRemaining = getWorkTime();
-        updateClock();
-    }
+    workTimeSecInput.value = Math.min(59, Math.max(0, workTimeSecInput.value)).toString().padStart(2, '0');
+    if (state === 0)
+        updateClock(getWorkTime());
 };
 
 restTimeMinInput.oninput = () => {
-    let correctedValue = Math.min(99, Math.max(0, restTimeMinInput.value));
-    restTimeMinInput.value = correctedValue.toString().padStart(2, '0');
-    if (state === 3) {
-        timeRemaining = getRestTime();
-        updateClock();
-    }
+    restTimeMinInput.value = Math.min(99, Math.max(0, restTimeMinInput.value)).toString().padStart(2, '0');
+    if (state === 2)
+        updateClock(getRestTime());
 };
 
 restTimeSecInput.oninput = () => {
-    let correctedValue = Math.min(59, Math.max(0, restTimeSecInput.value));
-    restTimeSecInput.value = correctedValue.toString().padStart(2, '0');
-    if (state === 3) {
-        timeRemaining = getRestTime();
-        updateClock();
-    }
+    restTimeSecInput.value = Math.min(59, Math.max(0, restTimeSecInput.value)).toString().padStart(2, '0');
+    if (state === 2)
+        updateClock(getRestTime());
 };
+
+worker.onmessage = (e) => {
+    if (e.data.type == "timerRunningMessage") {
+        if (state == 1 || state == 3) {
+            if (!e.data.running) {
+                state++;
+                handleState();
+            }
+            else
+                updateClock(e.data.timeRemaining);
+        }
+    } else if (e.data.type == "timerStopMessage") {
+        state = e.data.nextState;
+        handleState();
+    }
+}
 
 handleState();
