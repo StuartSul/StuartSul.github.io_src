@@ -1,0 +1,104 @@
+---
+layout: default
+order: 1015
+title: Epoch Time Converter
+summary: Easily convert Unix timestamps
+thumbnail_file: /assets/images/epoch.png
+javascript_file: /assets/js/epoch.js
+---
+
+<div class="epoch-container">
+    <div class="title">
+        Epoch Time Converter
+    </div>
+    <div class="epoch-body">
+        <div class="epoch-line">
+            <div class="label">
+                <label class="epoch-line-label" for="unix-time">Unix time</label>
+            </div>
+            <div class="inputs">
+                <input class="number dl" type="number" id="unix-time" name="unix-time">
+                <input type="button" id="set-to-now" value="Set to now">
+            </div>
+        </div>
+        <div class="epoch-line">
+            <div class="label">
+                <label class="epoch-line-label">UTC date</label>
+            </div>
+            <div class="inputs">
+                <span id="utc-dow"></span>
+                <span>,&nbsp;</span>
+                <input class="number d2" type="number" id="utc-month" name="utc-month">
+                <span class="date-slash">/</span>
+                <input class="number d2" type="number" id="utc-day" name="utc-day">
+                <span class="date-slash">/</span>
+                <input class="number d4" type="number" id="utc-year" name="utc-year">
+                <span>&nbsp;</span>
+                <input class="number d2" type="number" id="utc-hour" name="utc-hour">
+                <span class="time-colon">:</span>
+                <input class="number d2" type="number" id="utc-minute" name="utc-minute">
+                <span class="time-colon">:</span>
+                <input class="number d2" type="number" id="utc-second" name="utc-second">
+                <span>.</span>
+                <input class="number d3" type="number" id="utc-millisecond" name="utc-millisecond">
+            </div>
+        </div>
+        <div class="epoch-line">
+            <div class="label">
+                <label class="epoch-line-label">Local date</label>
+            </div>
+            <div class="inputs">
+                <span id="local-dow"></span>
+                <span>,&nbsp;</span>
+                <input class="number d2" type="number" id="local-month" name="local-month">
+                <span class="date-slash">/</span>
+                <input class="number d2" type="number" id="local-day" name="local-day">
+                <span class="date-slash">/</span>
+                <input class="number d4" type="number" id="local-year" name="local-year"4">
+                <span>&nbsp;</span>
+                <input class="number d2" type="number" id="local-hour" name="local-hour">
+                <span class="time-colon">:</span>
+                <input class="number d2" type="number" id="local-minute" name="local-minute">
+                <span class="time-colon">:</span>
+                <input class="number d2" type="number" id="local-second" name="local-second">
+                <span>.</span>
+                <input class="number d3" type="number" id="local-millisecond" name="local-millisecond">
+            </div>
+            <div class="inputs">
+                <span class="gmt-space">&nbsp;</span>
+                <span class="gmt">GMT</span>
+                <select name="local-gmt-sign" id="local-gmt-sign">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                </select>
+                <input class="gmt number d2" type="number" id="local-gmt-hour" name="local-gmt-hour">
+                <span class="gmt time-colon">:</span>
+                <input class="gmt number d2" type="number" id="local-gmt-minute" name="local-gmt-minute">
+                <input type="button" id="set-to-local" value="Local time">
+            </div>
+        </div>
+        <div class="epoch-line">
+            <div class="label">
+                <label class="epoch-line-label" for="relative-time">Relative time</label>
+            </div>
+            <div class="inputs">
+                <span id="relative-time">7</span>
+                <select name="relative-time-unit" id="relative-time-unit">
+                    <option value="seconds">seconds</option>
+                    <option value="minutes">minutes</option>
+                    <option value="hours">hours</option>
+                    <option value="days">days</option>
+                    <option value="months">months</option>
+                    <option value="years">years</option>
+                </select>
+                <select name="relative-time-direction" id="relative-time-direction">
+                    <option value="ago">ago</option>
+                    <option value="later">later</option>
+                </select>
+            </div>
+        </div>
+        <div class="description">
+            *Any input change will trigger conversion*
+        </div>
+    </div>
+</div>
