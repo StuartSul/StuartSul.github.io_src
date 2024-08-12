@@ -136,6 +136,28 @@
             border-radius: 5px;
         }
 
+        .select-box {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            box-sizing: content-box;
+            appearance: none;
+            background-color: #fff;
+            background-image: url(/assets/images/select-arrow.png);
+            background-size: 0.7rem;
+            background-position: 92% 52%;
+            background-repeat: no-repeat;
+            margin-left: 0.4rem;
+            padding-left: 0.3rem;
+            padding-right: 1.3rem;
+            border: 1px solid $border-primary-color;
+            border-radius: 5px;
+            height: 1.5rem;
+            font-size: 1rem;
+        }
+        .select-box::-ms-expand {
+            display: none;
+        }
+
         #download-button {
             margin-top: 1rem;
             padding: 8px 20px;

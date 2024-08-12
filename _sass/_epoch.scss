@@ -130,12 +130,36 @@
             cursor: not-allowed;
         }
 
-        select {
+        .select-box {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            box-sizing: content-box;
+            appearance: none;
+            background-color: #fff;
+            background-image: url(/assets/images/select-arrow.png);
+            background-size: 0.7rem;
+            background-position: 92% 52%;
+            background-repeat: no-repeat;
             margin-left: 0.4rem;
+            padding-left: 0.3rem;
+            padding-right: 1.3rem;
             height: 1.5rem;
             font-size: 1rem;
             border: 0px;
             border-radius: 5px;
+        }
+        .select-box::-ms-expand {
+            display: none;
+        }
+
+        .select-box-no-arrow {
+            background: none;
+            background-color: #fff;
+            padding-right: 0.3rem;
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+            font-weight: 600;
+            text-align: center;
         }
 
         .description {

@@ -67,9 +67,9 @@ javascript_file: /assets/js/epoch.js
             <div class="inputs">
                 <span class="gmt-space">&nbsp;</span>
                 <span class="gmt">GMT</span>
-                <select name="local-gmt-sign" id="local-gmt-sign">
+                <select class="select-box select-box-no-arrow" name="local-gmt-sign" id="local-gmt-sign">
                     <option value="+">+</option>
-                    <option value="-">-</option>
+                    <option value="-">&ndash;</option>
                 </select>
                 <input class="gmt number d2" type="number" id="local-gmt-hour" name="local-gmt-hour">
                 <span class="gmt time-colon">:</span>
@@ -83,7 +83,7 @@ javascript_file: /assets/js/epoch.js
             </div>
             <div class="inputs">
                 <span id="relative-time">7</span>
-                <select name="relative-time-unit" id="relative-time-unit">
+                <select class="select-box" name="relative-time-unit" id="relative-time-unit">
                     <option value="seconds">seconds</option>
                     <option value="minutes">minutes</option>
                     <option value="hours">hours</option>
@@ -91,7 +91,7 @@ javascript_file: /assets/js/epoch.js
                     <option value="months">months</option>
                     <option value="years">years</option>
                 </select>
-                <select name="relative-time-direction" id="relative-time-direction">
+                <select class="select-box" name="relative-time-direction" id="relative-time-direction">
                     <option value="ago">ago</option>
                     <option value="later">later</option>
                 </select>
