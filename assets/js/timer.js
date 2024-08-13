@@ -51,7 +51,7 @@ function handleState() {
         case 3:
             button.textContent = 'Reset';
             button.onclick = () => {
-                worker.postMessage({command: "stop", nextState: 1});
+                worker.postMessage({command: "stop", nextState: 0});
             };
             worker.postMessage({command: "start", duration: getRestTime()});
             break;
