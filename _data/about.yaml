@@ -39,8 +39,10 @@
     date:
       start-month: January
       start-year: 2024
+      end-month: April
+      end-year: 2024
     descriptions:
-    - Currently engineering a resilient multi-cloud RAG architecture across AWS and Azure.
+    - Engineered a resilient multi-cloud RAG architecture across AWS and Azure.
     - Migrated all application workloads to a K8s environment and implemented IaC for existing cloud resources.
     - Established core DevOps practices, including GitOps, autoscaling, CI/CD, monitoring, logging, and alarming, with Argo CD, Karpenter, GitHub Actions, Elasticsearch, Fluentbit, Kibana, Prometheus, and Grafana.
   - heading: Blux (formerly Z.Ai)
@@ -139,7 +141,6 @@
       Fluentbit, Kibana, Prometheus, Loki, Grafana, Apache Airflow, MLflow, TensorFlow Serving, 
       Karpenter, Sealed Secrets
       <br/>
-      <b>*I operated all of these at the production level*</b>
 
 ########################
 #    Additional Info   #
