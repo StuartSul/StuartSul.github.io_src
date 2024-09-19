@@ -12,7 +12,7 @@
       start-month: September
       start-year: 2024
     descriptions:
-    - Recipient of the Kwanjeong scholarship ($60,000)
+    - Recipient of the merit-based Kwanjeong scholarship ($60,000).
   - heading: Seoul National University
     subheading: B.S. in Computer Science and Engineering
     location: Seoul, South Korea
@@ -22,7 +22,8 @@
       end-month: August
       end-year: 2022
     descriptions:
-    - "GPA: 4.21/4.3 (<b>Class Rank: 1st</b>)"
+    - "GPA: 4.21/4.3 (<b>class rank: 1st</b>)."
+    - Member of the College of Engineering Honor Society.
 
 ########################
 #      Experience      #
@@ -33,16 +34,17 @@
   items:
   - heading: Linq (Techstars '23)
     link: https://www.getlinq.com/
-    subheading: DevOps & MLOps Lead
-    location: Cambridge, MA
+    subheading: Software Engineer (DevOps & MLOps Lead)
+    location: Cambridge, MA (remote)
     date:
       start-month: January
       start-year: 2024
       end-month: April
       end-year: 2024
     descriptions:
-    - Engineered a resilient multi-cloud RAG architecture across AWS and Azure.
-    - Migrated all application workloads to a K8s environment and implemented IaC for existing cloud resources.
+    - Engineered and maintained a resilient multi-cloud RAG infrastructure across AWS and Azure.
+    - Migrated all application workloads to a K8s environment and implemented IaC for existing cloud resources using Terraform.
+    - Enabled detailed monitoring of customers' LLM usage through the EFK stack, Prometheus, and Grafana, optimizing the monitoring of customers' large language model (LLM) usage.
     - Established core DevOps practices, including GitOps, autoscaling, CI/CD, monitoring, logging, and alarming, with Argo CD, Karpenter, GitHub Actions, Elasticsearch, Fluentbit, Kibana, Prometheus, and Grafana.
   - heading: Blux (formerly Z.Ai)
     link: https://www.blux.ai/
@@ -54,15 +56,16 @@
       end-month: August
       end-year: 2023
     descriptions:
-    - Co-founded and grew Blux to serve <b>10M+ users</b> monthly with $1M+ in annual revenue.
-    - Designed a K8s-based recommender architecture that handled 1B+ requests monthly and trained/deployed 100+ recommender models (featured in the official AWS Blog).
-    - Maintained 99.95%+ service uptime since the initial product launch.
-    - Developed and documented the Blux SDK.
-    - Built Transformer-based recommender recommender models that led initial customers to switch from a comparable AWS product to Blux.
-    - Initiated and managed multiple engineering projects, including ECS -> K8s migration, Cafe24 (Korean Shopify) product launch, and tenant onboarding automation.
-    - Recruited, built, and led a team of 10+ highly skilled engineers.
-    - Blux is an AI startup specializing in real-time recommender systems for e-commerce; it secured $1.7M in funding and received a $10M valuation in Korea.
-  - heading: Architecture and Code Optimization Lab
+    - Co-founded and grew Blux to serve <b>10M+ monthly users</b> with $1M+ in annual revenue; Blux is an AI SaaS startup specializing in real-time recommender systems for e-commerce.
+    - Secured $1.7M in funding and received a $10M valuation in South Korea.
+    - Designed a Kubernetes-based e-commerce recommender engine that handles 1B+ requests monthly and trains/deploys 100+ ML models daily (featured in the official AWS Blog).
+    - Engineered a robust, scalable, multi-tenant MLOps architecture that automates data gathering, model training, deployment, and monitoring, and maintained 99.95%+ service uptime since the initial product launch.
+    - Achieved 90% automation of SaaS product delivery by developing microservices for customer data collection and recommender model serving using FastAPI and gRPC.
+    - Developed and documented the Blux SDK (Python, Java, Kotlin, JavaScript, TypeScript, PHP, and Swift).
+    - Built Transformer-based recommender models with TensorFlow, leading initial customers to switch from a comparable AWS product to Blux for superior click-through rates.
+    - Initiated and managed multiple engineering projects, including no-downtime ECS -> K8s migration, Cafe24 (Korean Shopify) product launch, and tenant onboarding automation (using Jenkins, Argo CD, and Airflow).
+    - Recruited, built, and led an agile team of 15+ engineers.
+  - heading: Architecture and Code Optimization Lab, Seoul National University
     link: https://arc.snu.ac.kr/
     subheading: 'Research Assistant (Advisor: Prof. Jae W. Lee)'
     location: Seoul, South Korea
@@ -73,8 +76,22 @@
       end-year: 2020
     descriptions:
     - Designed and implemented a novel embedding clustering algorithm in C++, reducing the main memory access by up to 44% in commercial deep learning recommendation models (DLRMs).
-    - Co-authored an academic paper accepted at a top-tier CS conference (ASPLOS '21).
+    - Co-authored an academic paper accepted at ASPLOS 2021, a top-tier CS systems conference.
+    - Analyzed query patterns in recommendation dataset with hyperpartitioning algorithms.
     - Performed support tasks including data preprocessing, analysis, and algorithmic prototyping in C++ and Python.
+  - heading: Music and Audio Research Group, Seoul National University
+    link: https://snu-marg.notion.site/snu-marg/MARG-091390162ca941f4b88f64d47d2c4e87/
+    subheading: 'Research Assistant (Advisor: Prof. Kyogu Lee)'
+    location: Seoul, South Korea
+    date:
+      start-month: December
+      start-year: 2019
+      end-month: February
+      end-year: 2020
+    descriptions:
+    - Implemented an audio processing architecture using CNN, cGAN, super-resolution, and the Griffin-Lim algorithm, contributing to a commercial singing voice synthesis project.
+    - Performed data labeling on audio and MIDI data with millisecond-precision using Logic Pro and Python, preparing 30+ songs for model training.
+    - Led 6 lab seminars on advanced Python, teaching a group of graduate students with no prior technical background.
 
 ########################
 #       Projects       #
@@ -92,7 +109,7 @@
       end-month: December
       end-year: 2020
     descriptions:
-    - Developed a deep learning model and a mobile application for automated gravel quality assessment in concrete manufacturing.
+    - Developed a TensorFlow-based deep learning model and React.js-based mobile application for automated gravel quality assessment in concrete manufacturing.
     - The project was requested by Sampyo, a leading cement manufacturer in South Korea.
   - heading: LLVM Compiler Optimization
     link: https://github.com/StuartSul/SWPP2020_Spring_Project_Team4
@@ -103,8 +120,8 @@
       end-month: June
       end-year: 2020
     descriptions:
-    - Engineered a custom LLVM compiler for optimized assembly code performance.
-    - Secured 2nd place among 13 teams in a university competition.
+    - Optimized LLVM compiler using C++ to enhance assembly code performance.
+    - Secured 2nd place among 13 teams in an LLVM optimization competition at Seoul National University.
   - heading: Homemade Neural Network
     link: https://github.com/StuartSul/Homemade_Neural_Network
     subheading: Personal Project
@@ -115,6 +132,18 @@
       end-year: 2020
     descriptions:
     - A deep learning framework written using only native Python (not even NumPy).
+  - heading: Five-in-a-row with AI
+    link: https://github.com/StuartSul/Five_in_a_Row
+    subheading: Personal Project
+    date:
+      start-month: January
+      start-year: 2019
+      end-month: January
+      end-year: 2019
+    descriptions:
+    - A game of five-in-a-row, with GUI and an AI opponent.
+    - GUI and AI written in native Python.
+    - AI implemented using minimax algorithm.
 
 ########################
 #        Skills        #
@@ -124,13 +153,13 @@
   type: simple
   items:
   - heading: Languages
-    description: 'English & Korean'
+    description: 'English, Korean'
   - heading: Programming Languages
     description: |
-      Python, Java, C, C++, JavaScript/TypeScript, HTML/CSS, SQL
+      Python, Java, C, C++, JavaScript, TypeScript, HTML, CSS, SQL, Shell
   - heading: 'Libraries & Frameworks'
     description: |
-      React.js, FastAPI, Flask, Redis, PostgreSQL, NumPy, Pandas, Tensorflow
+      FastAPI, Flask, React.js, Redis, PostgreSQL, NumPy, Pandas, Spark, TensorFlow, PyTorch
   - heading: 'DevOps & MLOps'
     description: |
       Linux Administration, Docker, Kubernetes, Helm, AWS (VPC, EC2, ECS, EKS, EBS, ELB, 
@@ -138,7 +167,7 @@
       CloudFront, CodePipeline, CodeBuild, CloudFormation, Secrets Manager, KMS, CloudWatch, 
       CloudTrail), Azure, Terraform, GitHub Actions, Jenkins, Argo CD, Elasticsearch, Logstash, 
       Fluentbit, Kibana, Prometheus, Loki, Grafana, Apache Airflow, MLflow, TensorFlow Serving, 
-      Karpenter, Sealed Secrets
+      Karpenter, Sealed Secrets, Milvus
       <br/>
 
 ########################
@@ -150,12 +179,12 @@
   items:
   - heading: Music
     description: |
-      I am a guitarist and composer with 2 albums released on major streaming platforms 
-      like Spotify and Apple Music. Since 2008, I have served as the lead guitarist for
+      I am a guitarist, sound engineer, and composer with 2 albums released on major streaming platforms 
+      such as Spotify and Apple Music. Since 2008, I have served as the lead guitarist for
       various rock bands, performing in 2~3 rock concerts every year before COVID-19.
   - heading: U.S. Army
     description: |
       I served as a Combat Medic in a U.S. Army cavalry unit from November 2017 to August 
-      2019. This was possible through the Korean Augmentation to the United States Army 
+      2019 (21 months). This was possible through the Korean Augmentation to the United States Army 
       (KATUSA) program, which allowed me to fulfill South Korea's military service 
       requirement while serving in the U.S. Army.
