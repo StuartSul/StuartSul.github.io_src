@@ -44,7 +44,7 @@
     descriptions:
     - Engineered and maintained a resilient multi-cloud RAG infrastructure across AWS and Azure.
     - Migrated all application workloads to a K8s environment and implemented IaC for existing cloud resources using Terraform.
-    - Enabled detailed monitoring of customers' LLM usage through the EFK stack, Prometheus, and Grafana, optimizing the monitoring of customers' large language model (LLM) usage.
+    - Enabled detailed monitoring of customers' LLM usage through the EFK stack, Prometheus, and Grafana.
     - Established core DevOps practices, including GitOps, autoscaling, CI/CD, monitoring, logging, and alarming, with Argo CD, Karpenter, GitHub Actions, Elasticsearch, Fluentbit, Kibana, Prometheus, and Grafana.
   - heading: Blux (formerly Z.Ai)
     link: https://www.blux.ai/
