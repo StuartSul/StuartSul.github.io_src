@@ -12,7 +12,7 @@
       start-month: September
       start-year: 2024
     descriptions:
-    - Recipient of the merit-based Kwanjeong scholarship ($60,000).
+    - Recipient of the merit-based Kwanjeong scholarship ($60,000)
   - heading: Seoul National University
     subheading: B.S. in Computer Science and Engineering
     location: Seoul, South Korea
@@ -22,8 +22,9 @@
       end-month: August
       end-year: 2022
     descriptions:
-    - "GPA: 4.21/4.3 (<b>class rank: 1st</b>)."
-    - Member of the College of Engineering Honor Society.
+    - "GPA: 4.21/4.3 (class rank: 1st)"
+    - Recipient of the National Science and Engineering Scholarship for Gifted Students (full scholarship)
+    - Member of the College of Engineering Honor Society
 
 ########################
 #      Experience      #
@@ -32,20 +33,16 @@
 - title: Experience
   type: dated
   items:
-  - heading: Linq (Techstars '23)
-    link: https://www.getlinq.com/
-    subheading: Software Engineer (DevOps & MLOps Lead)
-    location: Cambridge, MA (remote)
+  - heading: Stanford AI Lab (SAIL)
+    link: https://hazyresearch.stanford.edu/
+    subheading: Research Assistant @ Hazy Research (Prof. Chris Ré)
+    location: Stanford, CA
     date:
-      start-month: January
+      start-month: December
       start-year: 2024
-      end-month: April
-      end-year: 2024
     descriptions:
-    - Engineered and maintained a resilient multi-cloud RAG infrastructure across AWS and Azure.
-    - Migrated all application workloads to a K8s environment and implemented IaC for existing cloud resources using Terraform.
-    - Enabled detailed monitoring of customers' LLM usage through the EFK stack, Prometheus, and Grafana.
-    - Established core DevOps practices, including GitOps, autoscaling, CI/CD, monitoring, logging, and alarming, with Argo CD, Karpenter, GitHub Actions, Elasticsearch, Fluentbit, Kibana, Prometheus, and Grafana.
+    - Designing speedy multi-GPU kernels for AI
+    - Working on <u><a href=https://github.com/HazyResearch/ThunderKittens>ThunderKittens</a></u>
   - heading: Blux (formerly Z.Ai)
     link: https://www.blux.ai/
     subheading: Co-Founder and CTO
