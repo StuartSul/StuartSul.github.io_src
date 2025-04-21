@@ -146,42 +146,42 @@
 #        Skills        #
 ########################
 
-- title: Skills
-  type: simple
-  items:
-  - heading: Languages
-    description: 'English, Korean'
-  - heading: Programming Languages
-    description: |
-      Python, Java, C, C++, JavaScript, TypeScript, HTML, CSS, SQL, Shell
-  - heading: 'Libraries & Frameworks'
-    description: |
-      FastAPI, Flask, React.js, Redis, PostgreSQL, NumPy, Pandas, Spark, TensorFlow, PyTorch
-  - heading: 'DevOps & MLOps'
-    description: |
-      Linux Administration, Docker, Kubernetes, Helm, AWS (VPC, EC2, ECS, EKS, EBS, ELB, 
-      S3, RDS, DynamoDB, ElastiCache, Lambda, API Gateway, SMS, SNS, SQS, Glue, MWAA, Route53, 
-      CloudFront, CodePipeline, CodeBuild, CloudFormation, Secrets Manager, KMS, CloudWatch, 
-      CloudTrail), Azure, Terraform, GitHub Actions, Jenkins, Argo CD, Elasticsearch, Logstash, 
-      Fluentbit, Kibana, Prometheus, Loki, Grafana, Apache Airflow, MLflow, TensorFlow Serving, 
-      Karpenter, Sealed Secrets, Milvus
-      <br/>
+# - title: Skills
+#   type: simple
+#   items:
+#   - heading: Languages
+#     description: 'English, Korean'
+#   - heading: Programming Languages
+#     description: |
+#       Python, Java, C, C++, JavaScript, TypeScript, HTML, CSS, SQL, Shell
+#   - heading: 'Libraries & Frameworks'
+#     description: |
+#       FastAPI, Flask, React.js, Redis, PostgreSQL, NumPy, Pandas, Spark, TensorFlow, PyTorch
+#   - heading: 'DevOps & MLOps'
+#     description: |
+#       Linux Administration, Docker, Kubernetes, Helm, AWS (VPC, EC2, ECS, EKS, EBS, ELB, 
+#       S3, RDS, DynamoDB, ElastiCache, Lambda, API Gateway, SMS, SNS, SQS, Glue, MWAA, Route53, 
+#       CloudFront, CodePipeline, CodeBuild, CloudFormation, Secrets Manager, KMS, CloudWatch, 
+#       CloudTrail), Azure, Terraform, GitHub Actions, Jenkins, Argo CD, Elasticsearch, Logstash, 
+#       Fluentbit, Kibana, Prometheus, Loki, Grafana, Apache Airflow, MLflow, TensorFlow Serving, 
+#       Karpenter, Sealed Secrets, Milvus
+#       <br/>
 
 ########################
 #    Additional Info   #
 ########################
 
-- title: More About Me
-  type: simple
-  items:
-  - heading: Music
-    description: |
-      I am a guitarist, sound engineer, and composer with 2 albums released on major streaming platforms 
-      such as Spotify and Apple Music. Since 2008, I have served as the lead guitarist for
-      various rock bands, performing in 2~3 rock concerts every year before COVID-19.
-  - heading: U.S. Army
-    description: |
-      I served as a Combat Medic in a U.S. Army cavalry unit from November 2017 to August 
-      2019 (21 months). This was possible through the Korean Augmentation to the United States Army 
-      (KATUSA) program, which allowed me to fulfill South Korea's military service 
-      requirement while serving in the U.S. Army.
+# - title: More About Me
+#   type: simple
+#   items:
+#   - heading: Music
+#     description: |
+#       I am a guitarist, sound engineer, and composer with 2 albums released on major streaming platforms 
+#       such as Spotify and Apple Music. Since 2008, I have served as the lead guitarist for
+#       various rock bands, performing in 2~3 rock concerts every year before COVID-19.
+#   - heading: U.S. Army
+#     description: |
+#       I served as a Combat Medic in a U.S. Army cavalry unit from November 2017 to August 
+#       2019 (21 months). This was possible through the Korean Augmentation to the United States Army 
+#       (KATUSA) program, which allowed me to fulfill South Korea's military service 
+#       requirement while serving in the U.S. Army.
