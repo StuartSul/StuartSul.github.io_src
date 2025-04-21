@@ -136,7 +136,7 @@
       end-month: September
       end-year: 2020
     descriptions:
-    - Fast embedding reduction algorithm for deep learning recommendation models (DLRMs), and other systems with extremely large-scale embedding tables.
+    - Fast embedding reduction algorithm for deep learning recommendation models (DLRMs) and other systems with extremely large-scale embedding tables.
   - heading: LLVM Compiler Optimization
     link: https://github.com/StuartSul/SWPP2020_Spring_Project_Team4
     subheading: University Team Project
