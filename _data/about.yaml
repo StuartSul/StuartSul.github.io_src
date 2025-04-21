@@ -42,7 +42,7 @@
       start-year: 2024
     descriptions:
     - Designing speedy multi-GPU kernels for AI
-    - Working on <u><a href=https://github.com/HazyResearch/ThunderKittens>ThunderKittens</a></u>
+    - Working on <u><a class="link-trans" href=https://github.com/HazyResearch/ThunderKittens>ThunderKittens</a></u>
   - heading: Blux (formerly Z.Ai)
     link: https://www.blux.ai/
     subheading: Co-Founder and CTO
@@ -53,18 +53,13 @@
       end-month: August
       end-year: 2023
     descriptions:
-    - Co-founded and grew Blux to serve <b>10M+ monthly users</b> with $1M+ in annual revenue; Blux is an AI SaaS startup specializing in real-time recommender systems for e-commerce.
+    - Co-founded and grew Blux to serve 10M+ monthly end-users with $1M+ in annual revenue; Blux is an AI SaaS startup specializing in real-time recommender systems for e-commerce.
     - Secured $1.7M in funding and received a $10M valuation in South Korea.
-    - Designed a Kubernetes-based e-commerce recommender engine that handles 1B+ requests monthly and trains/deploys 100+ ML models daily (featured in the official AWS Blog).
-    - Engineered a robust, scalable, multi-tenant MLOps architecture that automates data gathering, model training, deployment, and monitoring, and maintained 99.95%+ service uptime since the initial product launch.
-    - Achieved 90% automation of SaaS product delivery by developing microservices for customer data collection and recommender model serving using FastAPI and gRPC.
-    - Developed and documented the Blux SDK (Python, Java, Kotlin, JavaScript, TypeScript, PHP, and Swift).
-    - Built Transformer-based recommender models with TensorFlow, leading initial customers to switch from a comparable AWS product to Blux for superior click-through rates.
-    - Initiated and managed multiple engineering projects, including no-downtime ECS -> K8s migration, Cafe24 (Korean Shopify) product launch, and tenant onboarding automation (using Jenkins, Argo CD, and Airflow).
-    - Recruited, built, and led an agile team of 15+ engineers.
+    - Recruited, built, and led a team of 15+ engineers.
+    - Built lots of recommender models, multi-tanent MLOps architecture (Kubernetes was fun), microservices for data collection and model serving (thank you FastAPI), SDK in 7 programming languages, etc.
   - heading: Architecture and Code Optimization Lab, Seoul National University
     link: https://arc.snu.ac.kr/
-    subheading: 'Research Assistant (Advisor: Prof. Jae W. Lee)'
+    subheading: 'Research Assistant (Prof. Jae W. Lee)'
     location: Seoul, South Korea
     date:
       start-month: June
@@ -73,12 +68,10 @@
       end-year: 2020
     descriptions:
     - Designed and implemented a novel embedding clustering algorithm in C++, reducing the main memory access by up to 44% in commercial deep learning recommendation models (DLRMs).
-    - Co-authored an academic paper accepted at ASPLOS 2021, a top-tier CS systems conference.
-    - Analyzed query patterns in recommendation dataset with hyperpartitioning algorithms.
-    - Performed support tasks including data preprocessing, analysis, and algorithmic prototyping in C++ and Python.
+    - Resulted in a paper accepted at ASPLOS 2021.
   - heading: Music and Audio Research Group, Seoul National University
     link: https://snu-marg.notion.site/snu-marg/MARG-091390162ca941f4b88f64d47d2c4e87/
-    subheading: 'Research Assistant (Advisor: Prof. Kyogu Lee)'
+    subheading: 'Research Assistant (Prof. Kyogu Lee)'
     location: Seoul, South Korea
     date:
       start-month: December
@@ -87,8 +80,7 @@
       end-year: 2020
     descriptions:
     - Implemented an audio processing architecture using CNN, cGAN, super-resolution, and the Griffin-Lim algorithm, contributing to a commercial singing voice synthesis project.
-    - Performed data labeling on audio and MIDI data with millisecond-precision using Logic Pro and Python, preparing 30+ songs for model training.
-    - Led 6 lab seminars on advanced Python, teaching a group of graduate students with no prior technical background.
+    - Performed data labeling on audio and MIDI data with millisecond-precision using Logic Pro and Python, preparing 30+ songs for model training (was fun, but very painful)
 
 ########################
 #       Projects       #
@@ -103,7 +95,9 @@
     date:
       start-month: December
       start-year: 2024
-  - heading: ELF32 Dynamic Linker on Raspberry Pi
+    descriptions:
+    - Helps you write speedy GPU kernels for AI
+  - heading: ELF32 Dynamic Linker for Raspberry Pi
     link: https://github.com/StuartSul/elf32-dynamic-linker-rpi
     subheading: Personal Project
     date:
@@ -111,6 +105,8 @@
       start-year: 2025
       end-month: March
       end-year: 2025
+    descriptions:
+    - Ever wanted to run a dynamic linker on bare metal, and port shared libraries?
   - heading: Co-Chuck
     link: https://github.com/StuartSul/co-chuck
     subheading: Personal Project
@@ -119,6 +115,8 @@
       start-year: 2024
       end-month: November
       end-year: 2024
+    descriptions:
+    - "\"Code\" your music collaboratively online."
   - heading: SampyoNet
     link: https://github.com/StuartSul/SampyoNet
     subheading: University Team Project
@@ -129,7 +127,6 @@
       end-year: 2020
     descriptions:
     - Developed a TensorFlow-based deep learning model and React.js-based mobile application for automated gravel quality assessment in concrete manufacturing.
-    - The project was requested by Sampyo, a leading cement manufacturer in South Korea.
   - heading: LLVM Compiler Optimization
     link: https://github.com/StuartSul/SWPP2020_Spring_Project_Team4
     subheading: University Team Project
@@ -139,8 +136,7 @@
       end-month: June
       end-year: 2020
     descriptions:
-    - Optimized LLVM compiler using C++ to enhance assembly code performance.
-    - Secured 2nd place among 13 teams in an LLVM optimization competition at Seoul National University.
+    - Achieved 2nd place among 13 teams in an LLVM optimization competition at Seoul National University.
   - heading: Homemade Neural Network
     link: https://github.com/StuartSul/Homemade_Neural_Network
     subheading: Personal Project
