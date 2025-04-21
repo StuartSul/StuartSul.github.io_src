@@ -97,6 +97,28 @@
 - title: Projects
   type: dated
   items:
+  - heading: ThunderKittens
+    link: https://github.com/HazyResearch/ThunderKittens
+    subheading: Open Source Research Project
+    date:
+      start-month: December
+      start-year: 2024
+  - heading: ELF32 Dynamic Linker on Raspberry Pi
+    link: https://github.com/StuartSul/elf32-dynamic-linker-rpi
+    subheading: Personal Project
+    date:
+      start-month: February
+      start-year: 2025
+      end-month: March
+      end-year: 2025
+  - heading: Co-Chuck
+    link: https://github.com/StuartSul/co-chuck
+    subheading: Personal Project
+    date:
+      start-month: November
+      start-year: 2024
+      end-month: November
+      end-year: 2024
   - heading: SampyoNet
     link: https://github.com/StuartSul/SampyoNet
     subheading: University Team Project
