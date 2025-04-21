@@ -127,6 +127,16 @@
       end-year: 2020
     descriptions:
     - Developed a TensorFlow-based deep learning model and React.js-based mobile application for automated gravel quality assessment in concrete manufacturing.
+  - heading: MERCI
+    link: https://github.com/SNU-ARC/MERCI
+    subheading: Open Source Research Project
+    date:
+      start-month: June
+      start-year: 2020
+      end-month: September
+      end-year: 2020
+    descriptions:
+    - Fast embedding reduction algorithm for deep learning recommendation models (DLRMs), and other systems with extremely large-scale embedding tables.
   - heading: LLVM Compiler Optimization
     link: https://github.com/StuartSul/SWPP2020_Spring_Project_Team4
     subheading: University Team Project
