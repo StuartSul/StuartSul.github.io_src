@@ -33,6 +33,15 @@
 - title: Experience
   type: dated
   items:
+  - heading: Cursor (Anysphere Inc.)
+    link: https://www.cursor.com/
+    subheading: Machine Learning Engineer
+    location: San Francisco, CA
+    date:
+      start-month: June
+      start-year: 2025
+    descriptions:
+    - Making 4,000+ GPUs go brrr
   - heading: Stanford AI Lab (SAIL)
     link: https://hazyresearch.stanford.edu/
     subheading: Research Assistant @ Hazy Research (Prof. Chris Ré)
