@@ -90,6 +90,17 @@
     descriptions:
     - Implemented an audio processing architecture using CNN, cGAN, super-resolution, and the Griffin-Lim algorithm, contributing to a commercial singing voice synthesis project.
     - Performed data labeling on audio and MIDI data with millisecond-precision using Logic Pro and Python, preparing 30+ songs for model training (was fun, but very painful)
+  - heading: US Army
+    subheading: Sergeant
+    location: Dongducheon, South Korea
+    date:
+      start-month: November
+      start-year: 2017
+      end-month: August
+      end-year: 2019
+    descriptions:
+    - Served as a Combat Medic (68W) in a U.S. Army cavalry unit for 21 months. 
+    - This was possible through the Korean Augmentation to the United States Army (KATUSA) program which fulfilled my mandatory military service requirement as a South Korean.
 
 ########################
 #       Projects       #
