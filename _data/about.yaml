@@ -53,9 +53,9 @@
       end-month: August
       end-year: 2023
     descriptions:
-    - Co-founded and grew Blux to serve 10M+ monthly end-users with $1M+ in annual revenue; Blux is an AI SaaS startup specializing in real-time recommender systems for e-commerce.
-    - Secured $1.7M in funding and received a $10M valuation in South Korea.
-    - Recruited, built, and led a team of 15+ engineers.
+    - Real-time recommender systems for e-commerce
+    - Now serves 10M+ monthly end-users with $1M+ in annual revenue
+    - Built and led a team of 15+ engineers.
     - Built lots of recommender models, multi-tanent MLOps architecture (Kubernetes was fun), microservices for data collection and model serving (thank you FastAPI), SDK in 7 programming languages, etc.
   - heading: Architecture and Code Optimization Lab, Seoul National University
     link: https://arc.snu.ac.kr/
@@ -97,6 +97,8 @@
       start-year: 2024
     descriptions:
     - Helps you write speedy GPU kernels for AI
+    - Extended the original implementation to support multi-GPU kernels
+    - Currently working on a new GPU-side virtual machine project!
   - heading: ELF32 Dynamic Linker for Raspberry Pi
     link: https://github.com/StuartSul/elf32-dynamic-linker-rpi
     subheading: Personal Project
