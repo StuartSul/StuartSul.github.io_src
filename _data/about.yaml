@@ -129,6 +129,7 @@
       end-year: 2025
     descriptions:
     - Ever wanted to run a dynamic linker on bare metal, and port shared libraries?
+    - 'On May 22, 2025, I taught this as a lecture/lab at Stanford University (<a class="link-trans" href="https://github.com/dddrrreee/cs240lx-25spr/tree/main/labs/15-elf-dynamic-linker" itemprop="sameAs" target="_blank"><u>CS 240LX: ELF and Dynamic Linker</u></a>)'
   - heading: Co-Chuck
     link: https://github.com/StuartSul/co-chuck
     subheading: Personal Project
