@@ -51,7 +51,7 @@
       start-year: 2024
     descriptions:
     - Designing speedy multi-GPU kernels for AI
-    - Working on <u><a class="link-trans" href=https://github.com/HazyResearch/ThunderKittens>ThunderKittens</a></u>
+    - Working on <u><a class="link-trans" href=https://github.com/HazyResearch/ThunderKittens>ThunderKittens</a></u> (<u><a class="link-trans" href="https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles" itemprop="sameAs" target="_blank">recent blog post</a></u>)
   - heading: Blux (formerly Z.Ai)
     link: https://www.blux.ai/
     subheading: Co-Founder and CTO
