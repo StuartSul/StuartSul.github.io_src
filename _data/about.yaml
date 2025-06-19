@@ -41,7 +41,8 @@
       start-month: June
       start-year: 2025
     descriptions:
-    - Optimized AI kernel development for training big models
+    - Building Cursor's in-house models
+    - Optimizing AI kernels for training big models
   - heading: Stanford AI Lab (SAIL)
     link: https://hazyresearch.stanford.edu/
     subheading: Research Assistant @ Hazy Research (Prof. Chris Ré)
