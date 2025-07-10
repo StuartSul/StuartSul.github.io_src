@@ -35,13 +35,13 @@
   items:
   - heading: Cursor (Anysphere Inc.)
     link: https://www.cursor.com/
-    subheading: Machine Learning Engineer
+    subheading: Machine Learning Researcher
     location: San Francisco, CA
     date:
       start-month: June
       start-year: 2025
     descriptions:
-    - Optimized AI kernel development for training big models
+    - Optimized AI kernel development for large model training and inference
   - heading: Stanford AI Lab (SAIL)
     link: https://hazyresearch.stanford.edu/
     subheading: Research Assistant @ Hazy Research (Prof. Chris Ré)
