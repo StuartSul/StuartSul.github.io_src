@@ -41,6 +41,7 @@
       start-month: June
       start-year: 2025
     descriptions:
+    - Building Cursor's in-house models
     - Optimized AI kernel development for large model training and inference
   - heading: Stanford AI Lab (SAIL)
     link: https://hazyresearch.stanford.edu/
