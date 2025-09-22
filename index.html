@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- Summary -->
+<!-- Profile Header -->
 <section class="about-section summary">
 
     <!-- Profile Image -->
@@ -27,76 +27,12 @@ layout: default
         </ul>
     </div>
 
-    <!-- Executive Summary -->
-    <p class="execsum" itemprop="description">{{ site.data.profile.summary }}</p>
-
 </section>
 
-{% for section in site.data.about %}
-    <section class="about-section body">
-        
-        <div class="title-container"><h2 class="title">{{ section.title }}</h2></div>
-
-        {% if section.type == "dated" or section.type == "photographed" %}
-            {% for item in section.items %}
-                <div class="item">
-                    {% if section.type == "dated" %}
-                        <div class="item-left">
-                            <time class="date-range">
-                                <div class="date"><span class="month">{{ item.date.start-month }}</span><span class="year">{{ item.date.start-year }}</span></div>
-                                <div class="ndash">&ndash;</div>
-                                {% if item.date.end-year %}
-                                    <div class="date"><span class="month">{{ item.date.end-month }}</span><span class="year">{{ item.date.end-year }}</span></div>
-                                {% else %}
-                                    <div class="present">Present</div>
-                                {% endif %}
-                            </time class="date-range">
-                            {% if item.location %}
-                                <span class="location">{{ item.location }}</span>
-                            {% endif %}
-                        </div>
-                    {% else %}
-                        <img class="item-photo-desktop" src="{{ item.photo }}">
-                    {% endif %}
-                    <div class="item-right">
-                        {% if item.link %}
-                            <a class="link-trans" href="{{ item.link }}" itemprop="sameAs" target="_blank">
-                                <h3 class="heading" itemprop="name">
-                                    <span>{{ item.heading }}</span>
-                                    <span>{% include icons/link.html %}</span>
-                                </h3>
-                            </a>
-                        {% else %}
-                            <h3 class="heading" itemprop="name">{{ item.heading }}</h3>
-                        {% endif %}
-                        {% if item.subheading %}
-                            <h4 class="subheading" itemprop="description">{{ item.subheading }}</h4>
-                        {% endif %}
-                        <ul class="description">
-                            {% for description in item.descriptions %}
-                                <li>{{ description }}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            {% endfor %}
-        {% elsif section.type == "simple" %}
-            <div class="item-list">
-            {% for item in section.items %}
-                <div class="item-list-item">
-                    <h3 class="heading" itemprop="name">{{ item.heading }}</h3>
-                    {% if item.descriptions %}
-                        <ul class="descriptions">
-                            {% for description in item.descriptions %}
-                                <li>{{ description }}</li>
-                            {% endfor %}
-                        </ul>
-                    {% elsif item.description %}
-                        <p class="description">{{ item.description }}</p>
-                    {% endif %}
-                </div>
-            {% endfor %}
-            </div>
-        {% endif %}
-    </section>
-{% endfor %}
+<!-- About Content -->
+<section class="about-section body">
+    <div class="content">
+        {% capture about_content %}{% include about.md %}{% endcapture %}
+        {{ about_content | markdownify }}
+    </div>
+</section>

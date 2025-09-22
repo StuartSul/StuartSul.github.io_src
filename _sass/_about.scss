@@ -1,5 +1,5 @@
 .about-section {
-    padding: 3rem 0;
+    padding: 3rem 0 1rem 0;
     margin: 0;
 }
 
@@ -42,14 +42,10 @@
         }
     }
 
-    .execsum {
-        padding: 0;
-        margin: 0;
-    }
 }
 
 .about-section.body {
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
 
     .title-container {
         display: flex;
@@ -67,174 +63,131 @@
         }
     }
 
-    .item {
-        margin-bottom: 1.5rem;
-        padding: 0;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-
-        @media (max-width: $mobile-width) {
-            flex-direction: column;
-            margin-bottom: 3rem;
+    .content {
+        line-height: 1.6;
+        
+        h1 {
+            display: inline;
+            border: 1px solid $border-secondary-color;
+            margin: 3rem 0 2rem 0;
+            padding: 0.6rem 0.9rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            
+            &:first-child {
+                margin-top: 2rem;
+            }
         }
-    
-        .item-left {
-            min-width: $left-column-width;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-
-            @media (max-width: $mobile-width) {
-                width: 100%;
-                flex-direction: row;
-                align-items: flex-end;
-                justify-content: space-between;
-                border-bottom: 1px solid $border-primary-color;
+        
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 2rem 0 1rem 0;
+            color: $font-primary-color;
+            
+            // Reduce bottom margin when followed by h4 (subtitle)
+            + h4 {
+                margin-top: -0.75rem;
             }
-
-            .date-range {
-                display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
+        }
         
-                .date {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: flex-start;
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem 0;
+            color: $font-primary-color;
+        }
         
-                    .month {
-                        color: $font-tertiary-color;
-                        font-size: 0.7rem;
-                    }
+        h4 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0 0 0.75rem 0;
+            color: $font-secondary-color;
+        }
         
-                    .year {
-                        margin-top: -0.5rem;
-                        font-size: 1.7rem;
-                        font-weight: 700;
-                    }
-                }
+        p {
+            margin: 0.75rem 0;
+            line-height: 1.6;
+        }
         
-                .ndash {
-                    margin-top: 0.5rem;
-                    font-size: 1.5rem;
-
-                    @media (max-width: $mobile-width) {
-                        font-size: 1.4rem;
-                    }
-                }
-
-                .present {
-                    margin-top: 0.5rem;
-                    font-size: 1.7rem;
-                    font-weight: 700;
-                }
+        em {
+            font-style: italic;
+        }
         
-                div {
-                    padding-right: 0.5rem;
-                }
+        .subtitle {
+            color: $font-secondary-color;
+            font-weight: 500;
+        }
+        
+        strong {
+            font-weight: 700;
+        }
+        
+        ul, ol {
+            margin: 0.75rem 0;
+            padding-left: 1.5rem;
+            list-style-type: disc;
+            
+            li {
+                margin: 0.25rem 0;
+                line-height: 1.5;
             }
-
-            .location {
+        }
+        
+        ol {
+            list-style-type: decimal;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: $font-secondary-color;
+            
+            &:hover {
                 color: $font-secondary-color;
-                font-weight: 600;
-
-                @media (max-width: $mobile-width) {
-                    padding-bottom: 0.2rem;
-                }
+                @include transition(all .2s ease);
             }
         }
-
-        .item-photo-desktop {
-            // must align with dated items
-            width: 155px;
-            margin-right: 35px;
-            border-radius: 10px;
-
-            @media (max-width: $mobile-width) {
-                display: none;
-            }
+        
+        code {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 0.9rem;
         }
-    
-        .item-right {
-            max-width: $right-column-width;
-
-            @media (max-width: $mobile-width) {
-                width: 100%;
-            }
-
-            .heading {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                font-weight: 700;
-                font-size: 1.5rem;
-            }
-
-            .link-icon {
-                width: 1.2rem;
-                height: 1.2rem;
-                margin-left: 0.1rem;
-                margin-bottom: -0.17rem;
-            }
-
-            .subheading {
-                margin: 0;
-                padding: 0;
-                font-weight: 600;
-                font-size: 1rem;
-            }
-
-            .description {
-                list-style-type: disc;
-                margin-top: 0.5rem;
-                padding-left: 1.5rem;
-            }
+        
+        blockquote {
+            border-left: 3px solid $border-secondary-color;
+            margin: 1rem 0;
+            padding: 0.5rem 0 0.5rem 1rem;
+            color: $font-tertiary-color;
+            font-style: italic;
         }
-    }
-    
-    .item-list {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-
+        
+        hr {
+            border: none;
+            height: 1px;
+            background-color: $border-primary-color;
+            margin: 3rem 0;
+        }
+        
+        // Responsive spacing
         @media (max-width: $mobile-width) {
-            margin-bottom: 1.5rem; // because dated lists have 3rem bottom margin on mobile
-        }
-    
-        .item-list-item {
-            flex: 50%;
-            margin-bottom: 1.5rem;
-
-            @media (max-width: $mobile-width) {
-                flex: 100%;
+            h2 {
+                font-size: 1.3rem;
+                margin: 1.5rem 0 0.75rem 0;
             }
             
-            .heading {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                font-weight: 700;
-                font-size: 1.5rem;
-            }
-        
-            .descriptions {
-                list-style-type: disc;
-                margin-top: 0.5rem;
-                padding-left: 1.5rem;
-            }
-        
-            .description {
-                margin-top: 0.5rem;
-                padding-right: 1.5rem;
-    
-                @media (max-width: $mobile-width) {
-                    flex: 100%;
-                    padding-right: 0;
-                }
+            h3 {
+                font-size: 1.1rem;
+                margin: 1.25rem 0 0.5rem 0;
             }
         }
     }
