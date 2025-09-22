@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <defs/>
+  <path d="M 18 4.8 L 6 4.8 L 6 8.4 L 7.199 8.4 C 7.199 7.696 7.437 6.6 8.4 6.6 L 10.8 6.6 L 10.8 16.724 C 10.8 17.429 10.305 18 9.6 18 L 9 18 L 9 19.2 L 14.999 19.2 L 14.999 18 L 14.4 18 C 13.696 18 13.2 17.429 13.2 16.724 L 13.2 6.6 L 15.6 6.6 C 16.59 6.6 16.812 7.696 16.812 8.4 L 18 8.4 L 18 4.8 Z"/>
+  <rect width="24" height="24" style="stroke: rgb(0, 0, 0); fill: rgba(255, 255, 255, 0); stroke-width: 5px;"/>
+</svg>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <defs/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 2.5px;" d="M 2 22 L 22 2"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round; transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 2.5px;" d="M 12.317 6.001 L 20.327 -2.009" transform="matrix(0.707046, 0.707167, -0.707167, 0.707046, 0, 0)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round; transform-origin: 22.064px 7.864px; stroke-width: 2.5px;" d="M 18.059 11.869 L 26.069 3.859" transform="matrix(0.707167, -0.707047, 0.707047, 0.707167, 0, 0)"/>
+</svg>
