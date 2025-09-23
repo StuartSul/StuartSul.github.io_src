@@ -1,14 +1,12 @@
-Hi 👋, I'm Stuart.
+Hi 👋
 
-I aim to be both an entrepreneur and a dedicated engineer. I develop new things, optimize systems, and build teams. I truly love the feeling of tackling new challenges from scratch.
+I’m a master’s student in Computer Science at Stanford, advised by the amazing [**Chris Ré**](https://cs.stanford.edu/~chrismre/) in the [Hazy Research](https://hazyresearch.stanford.edu/) lab and supported by the Kwanjeong Scholarship. I am also a part-time Research Scientist at [**Cursor**](https://www.cursor.com/).
+ 
+My research focuses on **ML systems**. I design hardware-aware abstractions and methods to accelerate training and inference of large language models. Some of my work includes [megakernels](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles), [efficient MXFP8 training](https://cursor.com/blog/kernels), [GPU networking](https://hazyresearch.stanford.edu/blog/2025-09-22-pgl), and [ThunderKittens](https://github.com/HazyResearch/ThunderKittens).
 
-I co-founded [Blux](https://blux.ai/) (formerly Z.Ai), an AI startup specializing in empowering Korean e-commerce through AI-driven personalization. Blux raised $3M+ and is personalizing over 10 million Korean users' online journeys monthly.
+Previous to Stanford and Cursor, I co-founded [**Blux**](https://blux.ai/), an AI startup specializing in empowering Korean e-commerce through AI-driven personalization. Blux raised $3M+ and is personalizing over 10 million Korean users' online journeys monthly.
 
-I am currently pursuing a Master of Science in Computer Science at Stanford University. I'm focusing on MLSys research @ [Hazy Research](https://hazyresearch.stanford.edu/) (Prof. Chris Ré), contributing to the [ThunderKittens](https://github.com/HazyResearch/ThunderKittens) project.
-
-I also work on machine learning research @ [Cursor](https://www.cursor.com/), accelerating in-house AI training and inference through optimized kernel development.
-
-In addition, I professionally play electric guitar and compose music. I have released two albums and have been the lead guitarist and producer for various rock bands since 2008.
+In addition, I am an electric guitarist and composer. I have released two albums and performed as lead guitarist and producer for multiple rock bands since 2008.
 
 ---
 
@@ -41,24 +39,10 @@ Worked with Prof. Jae W. Lee to design and implement a novel embedding clusterin
 
 Worked with Prof. Kyogu Lee on audio processing architecture using CNN, cGAN, super-resolution, and the Griffin-Lim algorithm for commercial singing voice synthesis. Also performed millisecond-precision data labeling on audio and MIDI data using Logic Pro and Python for 30+ K-pop songs.
 
-## Sergeant (Combat Medic) @ US Army
+## Sergeant, Combat Medic @ US Army
 #### November 2017 - August 2019 | Dongducheon, South Korea
 
 Served as a Combat Medic (68W) in a U.S. Army cavalry unit for 21 months through the Korean Augmentation to the United States Army (KATUSA) program, fulfilling South Korea's mandatory military service requirement.
-
----
-
-# Education
-
-## M.S. in Computer Science @ Stanford University
-#### September 2024 - Present | Stanford, CA
-* Recipient of the merit-based Kwanjeong scholarship ($60,000)
-
-## B.S. in Computer Science and Engineering @ Seoul National University
-#### March 2016 - August 2022 | Seoul, South Korea
-* GPA: 4.21/4.3 (class rank: 1st)
-* Recipient of the National Science and Engineering Scholarship for Gifted Students (full scholarship)
-* Member of the College of Engineering Honor Society
 
 ---
 
@@ -103,6 +87,20 @@ A game with GUI and an AI opponent using minimax algorithm, written in native Py
 
 ## [Look Ma, No Bubbles! Designing a Low-Latency Megakernel for Llama-1B](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles)
 #### Hazy Research
+
+---
+
+# Education
+
+## Stanford University
+#### M.S. in Computer Science
+* Recipient of the merit-based Kwanjeong scholarship ($60,000)
+
+## Seoul National University
+#### B.S. in Computer Science and Engineering
+* GPA: 4.21/4.3 (class rank: 1st)
+* Recipient of the National Science and Engineering Scholarship for Gifted Students (full scholarship)
+* Member of the College of Engineering Honor Society
 
 <!-- ---
 
