@@ -15,12 +15,12 @@ In addition, I am an electric guitarist and composer. I have released two albums
 ## Research Scientist @ Cursor (Anysphere Inc.)
 #### June 2025 - Present | San Francisco, CA
 
-Building Cursor's in-house models and optimizing AI kernel development for large model training and inference. Check out my [recent blog post on MXFP8 MoE kernels](https://cursor.com/blog/kernels).
+Building in-house models and optimizing AI kernels for large-scale training and inference. Check out my [recent blog post on MXFP8 MoE kernels](https://cursor.com/blog/kernels).
 
 ## Research Assistant @ Stanford AI Lab
 #### December 2024 - Present | Stanford, CA
 
-Working with Prof. Chris Ré at [Hazy Research](https://hazyresearch.stanford.edu/), designing speedy multi-GPU kernels for AI. Contributing to [ThunderKittens](https://github.com/HazyResearch/ThunderKittens). Read about our [recent work on megakernels](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles).
+Working with Prof. Chris Ré at [Hazy Research](https://hazyresearch.stanford.edu/). Working on [ThunderKittens](https://github.com/HazyResearch/ThunderKittens), [megakernels](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles), and [GPU networking](https://hazyresearch.stanford.edu/blog/2025-09-22-pgl).
 
 ## Co-Founder and CTO @ Blux
 #### July 2021 - August 2023 | Seoul, South Korea
@@ -49,32 +49,34 @@ Served as a Combat Medic (68W) in a U.S. Army cavalry unit for 21 months through
 # Projects
 
 ## [ThunderKittens](https://github.com/HazyResearch/ThunderKittens)
-Helps you write speedy GPU kernels for AI. Extended the original implementation to support multi-GPU kernels and currently working on a new GPU-side virtual machine project.
-
-## [ELF32 Dynamic Linker for Raspberry Pi](https://github.com/StuartSul/elf32-dynamic-linker-rpi)
-Ever wanted to run a dynamic linker on bare metal, and port shared libraries? On May 22, 2025, I taught this as a lecture/lab at Stanford University: [CS 240LX: ELF and Dynamic Linker](https://github.com/dddrrreee/cs240lx-25spr/tree/main/labs/15-elf-dynamic-linker).
-
-## [Co-Chuck](https://github.com/StuartSul/co-chuck)
-"Code" your music collaboratively online.
-
-## [SampyoNet](https://github.com/StuartSul/SampyoNet)
-Developed a TensorFlow-based deep learning model and React.js-based mobile application for automated gravel quality assessment in concrete manufacturing.
+Helps you write speedy GPU kernels for AI. 2.7k+ GitHub stars and adopted by Cursor, Together AI, Jump Trading, Modular, TileLang, and Nvidia CuTe 4.0.
 
 ## [MERCI](https://github.com/SNU-ARC/MERCI)
-Fast embedding reduction algorithm for deep learning recommendation models (DLRMs) and other systems with extremely large-scale embedding tables.
+Fast embedding reduction algorithm for deep learning recommendation models (DLRMs) and other systems with very large embedding tables.
+
+## [ELF32 Dynamic Linker for Raspberry Pi](https://github.com/StuartSul/elf32-dynamic-linker-rpi)
+ELF dynamic linker on bare metal, allowing you to port shared libraries.
+
+Taught as a lab at Stanford University: [CS 240LX: ELF and Dynamic Linker](https://github.com/dddrrreee/cs240lx-25spr/tree/main/labs/15-elf-dynamic-linker).
+
+## [Co-Chuck](https://github.com/StuartSul/co-chuck)
+Collaborative online environment that allows you to "code" your music.
+
+## [SampyoNet](https://github.com/StuartSul/SampyoNet)
+Deep learning model, inference engine, and mobile app combined for gravel quality assessment. Provided to Sampyo for production concrete manufacturing.
 
 ## [LLVM Compiler Optimization](https://github.com/StuartSul/SWPP2020_Spring_Project_Team4)
 Achieved 2nd place among 13 teams in an LLVM optimization competition at Seoul National University.
 
-## [Homemade Neural Network](https://github.com/StuartSul/Homemade_Neural_Network)
+<!-- ## [Homemade Neural Network](https://github.com/StuartSul/Homemade_Neural_Network)
 A deep learning framework written using only native Python (not even NumPy).
 
 ## [Five-in-a-row with AI](https://github.com/StuartSul/Five_in_a_Row)
-A game with GUI and an AI opponent using minimax algorithm, written in native Python.
+A game with GUI and an AI opponent using minimax algorithm, written in native Python. -->
 
 ---
 
-# Writings
+# Writing
 
 ## 8-GPU Tensor-Parallel Llama 70B Megakernel (coming soon!)
 #### Hazy Research
