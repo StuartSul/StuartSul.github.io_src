@@ -4,7 +4,7 @@ I’m a master’s student in Computer Science at Stanford, advised by the amazi
  
 My research focuses on **ML systems**. I design hardware-aware abstractions and methods to accelerate training and inference of large language models. Some of my work includes [megakernels](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles), [efficient MXFP8 training](https://cursor.com/blog/kernels), [GPU networking](https://hazyresearch.stanford.edu/blog/2025-09-22-pgl), and [ThunderKittens](https://github.com/HazyResearch/ThunderKittens).
 
-Previous to Stanford and Cursor, I co-founded [**Blux**](https://blux.ai/), an AI startup specializing in empowering Korean e-commerce through AI-driven personalization. Blux raised $3M+ and is personalizing over 10 million Korean users' online journeys monthly.
+Prior to Stanford and Cursor, I co-founded [**Blux**](https://blux.ai/), an AI startup specializing in empowering Korean e-commerce through AI-driven personalization. Blux raised $3M+ and is personalizing over 10 million Korean users' online journeys monthly.
 
 In addition, I am an electric guitarist and composer. I have released two albums and performed as lead guitarist and producer for multiple rock bands since 2008.
 
@@ -20,7 +20,7 @@ Building in-house models and optimizing AI kernels for large-scale training and 
 ## Research Assistant @ Stanford AI Lab
 #### December 2024 - Present | Stanford, CA
 
-Working with Prof. Chris Ré at [Hazy Research](https://hazyresearch.stanford.edu/). Working on [ThunderKittens](https://github.com/HazyResearch/ThunderKittens), [megakernels](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles), and [GPU networking](https://hazyresearch.stanford.edu/blog/2025-09-22-pgl).
+Advised by Prof. Chris Ré at [Hazy Research](https://hazyresearch.stanford.edu/). Working on [ThunderKittens](https://github.com/HazyResearch/ThunderKittens), [megakernels](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles), and [GPU networking](https://hazyresearch.stanford.edu/blog/2025-09-22-pgl).
 
 ## Co-Founder and CTO @ Blux
 #### July 2021 - August 2023 | Seoul, South Korea
