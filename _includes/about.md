@@ -13,34 +13,34 @@ In addition, I am an electric guitarist and composer. I have released two albums
 # Experience
 
 ## Research Scientist @ Cursor (Anysphere Inc.)
-#### June 2025 - Present | San Francisco, CA
+#### June 2025 - Present
 
 Building in-house models and optimizing AI kernels for large-scale training and inference. Check out my [recent blog post on MXFP8 MoE kernels](https://cursor.com/blog/kernels).
 
 ## Research Assistant @ Stanford AI Lab
-#### December 2024 - Present | Stanford, CA
+#### December 2024 - Present
 
 Advised by Prof. Chris Ré at [Hazy Research](https://hazyresearch.stanford.edu/). Working on [ThunderKittens](https://github.com/HazyResearch/ThunderKittens), [megakernels](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles), and [GPU networking](https://hazyresearch.stanford.edu/blog/2025-09-22-pgl).
 
 ## Co-Founder and CTO @ Blux
-#### July 2021 - August 2023 | Seoul, South Korea
+#### July 2021 - August 2023
 
 Blux provides real-time recommender systems for e-commerce. Blux raised $3M+ and is personalizing over 10 million Korean users' online journeys monthly.
 
 I was the only technical co-founder until we acquired our first paying customer. I built everything (server, infrastructure, ML) from scratch. Over time, I recruited and led a team of 15+ engineers.
 
 ## Research Assistant @ Seoul National University
-#### June 2020 - September 2020 | Architecture and Code Optimization Lab
+#### June 2020 - September 2020
 
-Worked with Prof. Jae W. Lee to design and implement a novel embedding clustering algorithm in C++, reducing main memory access by up to 44% in commercial deep learning recommendation models (DLRMs). This research resulted in a paper accepted at ASPLOS 2021.
+Worked with Prof. Jae W. Lee at the [Architecture and Code Optimization Lab](https://arc.snu.ac.kr/) to design and implement a novel embedding clustering algorithm in C++, reducing main memory access by up to 44% in commercial deep learning recommendation models (DLRMs). This research resulted in a paper accepted at ASPLOS 2021.
 
 ## Research Assistant @ Seoul National University
-#### December 2019 - February 2020 | Music and Audio Research Group
+#### December 2019 - February 2020
 
-Worked with Prof. Kyogu Lee on audio processing architecture using CNN, cGAN, super-resolution, and the Griffin-Lim algorithm for commercial singing voice synthesis. Also performed millisecond-precision data labeling on audio and MIDI data using Logic Pro and Python for 30+ K-pop songs.
+Worked with Prof. Kyogu Lee at the [Music and Audio Research Group](https://marg.snu.ac.kr/) on audio processing architecture using CNN, cGAN, super-resolution, and the Griffin-Lim algorithm for commercial singing voice synthesis. Also performed millisecond-precision data labeling on audio and MIDI data using Logic Pro and Python for 30+ K-pop songs.
 
 ## Sergeant, Combat Medic @ US Army
-#### November 2017 - August 2019 | Dongducheon, South Korea
+#### November 2017 - August 2019
 
 Served as a Combat Medic (68W) in a U.S. Army cavalry unit for 21 months through the Korean Augmentation to the United States Army (KATUSA) program, fulfilling South Korea's mandatory military service requirement.
 
