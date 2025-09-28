@@ -20,7 +20,7 @@ Building in-house models and optimizing AI kernels for large-scale training and 
 ## Research Assistant @ Stanford AI Lab
 #### December 2024 - Present
 
-Advised by Prof. Chris Ré at [Hazy Research](https://hazyresearch.stanford.edu/). Working on [ThunderKittens](https://github.com/HazyResearch/ThunderKittens), [megakernels](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles), and [GPU networking](https://hazyresearch.stanford.edu/blog/2025-09-22-pgl).
+Advised by Prof. Chris Ré at [Hazy Research](https://hazyresearch.stanford.edu/). Working on [ThunderKittens](https://github.com/HazyResearch/ThunderKittens), [low-latency megakernel](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles), [high-throughput megakernel](https://hazyresearch.stanford.edu/blog/2025-09-28-tp-llama-main) and [GPU networking](https://hazyresearch.stanford.edu/blog/2025-09-22-pgl).
 
 ## Co-Founder and CTO @ Blux
 #### July 2021 - August 2023
@@ -78,7 +78,10 @@ A game with GUI and an AI opponent using minimax algorithm, written in native Py
 
 # Writing
 
-## 8-GPU Tensor-Parallel Llama 70B Megakernel (coming soon!)
+## [We Bought the Whole GPU, So We're Damn Well Going to Use the Whole GPU](https://hazyresearch.stanford.edu/blog/2025-09-28-tp-llama-main)
+#### Hazy Research
+
+## [How Many Llamas Can Dance in the Span of a Kernel?](https://hazyresearch.stanford.edu/blog/2025-09-28-tp-llama-intro)
 #### Hazy Research
 
 ## [One Kernel for All Your GPUs](https://hazyresearch.stanford.edu/blog/2025-09-22-pgl)
