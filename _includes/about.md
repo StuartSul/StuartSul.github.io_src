@@ -12,7 +12,7 @@ In addition, I am an electric guitarist and composer. I have released two albums
 
 # Experience
 
-## Research Scientist @ Cursor (Anysphere Inc.)
+## Research Scientist @ Cursor
 #### June 2025 - Present
 
 Building in-house models and optimizing AI kernels for large-scale training and inference. Check out my [recent blog post on MXFP8 MoE kernels](https://cursor.com/blog/kernels).
