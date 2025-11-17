@@ -49,10 +49,10 @@ Served as a Combat Medic (68W) in a U.S. Army cavalry unit for 21 months through
 # Projects
 
 ## [Megakernels](https://github.com/HazyResearch/Megakernels)
-Runs FlashMLA, Llama 3 1B, and Llama 3 70B in a single fused megakernel. 500+ stars on GitHub.
+Runs FlashMLA, Llama 3 1B, and Llama 3 70B in a single fused megakernel. 600+ stars on GitHub.
 
 ## [ThunderKittens](https://github.com/HazyResearch/ThunderKittens)
-Helps you write speedy GPU kernels for AI. 2.7k+ stars on GitHub and adopted by Cursor, Together AI, Jump Trading, Modular, TileLang, and Nvidia CuTe 4.0.
+Helps you write speedy GPU kernels for AI. 2.9k+ stars on GitHub and adopted by Cursor, Together AI, Jump Trading, Modular, TileLang, and Nvidia CuTe 4.0.
 
 ## [MERCI](https://github.com/SNU-ARC/MERCI)
 Fast embedding reduction algorithm for deep learning recommendation models (DLRMs) and other systems with very large embedding tables.
@@ -80,6 +80,12 @@ A game with GUI and an AI opponent using minimax algorithm, written in native Py
 ---
 
 # Writing
+
+## [Loads and Loads of Fluffy Kittens](https://hazyresearch.stanford.edu/blog/2025-11-17-fluffy-kittens)
+#### Hazy Research
+
+## [ParallelKittens: Simple and Fast Multi-GPU AI Kernels](https://hazyresearch.stanford.edu/blog/2025-11-17-pk)
+#### Hazy Research
 
 ## [We Bought the Whole GPU, So We're Damn Well Going to Use the Whole GPU](https://hazyresearch.stanford.edu/blog/2025-09-28-tp-llama-main)
 #### Hazy Research
