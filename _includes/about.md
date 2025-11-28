@@ -52,7 +52,7 @@ Served as a Combat Medic (68W) in a U.S. Army cavalry unit for 21 months through
 Runs FlashMLA, Llama 3 1B, and Llama 3 70B in a single fused megakernel. 600+ stars on GitHub.
 
 ## [ThunderKittens](https://github.com/HazyResearch/ThunderKittens)
-Helps you write speedy GPU kernels for AI. 2.9k+ stars on GitHub and adopted by Cursor, Together AI, Jump Trading, Modular, TileLang, and Nvidia CuTe 4.0.
+Helps you write speedy GPU kernels for AI. 3,000+ stars on GitHub and adopted by Cursor, Together AI, Jump Trading, Modular, TileLang, and Nvidia CuTe 4.0.
 
 ## [MERCI](https://github.com/SNU-ARC/MERCI)
 Fast embedding reduction algorithm for deep learning recommendation models (DLRMs) and other systems with very large embedding tables.
